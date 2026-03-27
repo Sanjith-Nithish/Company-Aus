@@ -1,0 +1,958 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inlec Solutions Australia | Analytical & Automation Engineering</title>
+<meta name="description" content="Inlec Solutions Australia Pty Ltd ΓÇô Analytical Devices Engineering Services in Queensland, Australia. 60+ years combined experience. ABN 690 817 880.">
+<meta property="og:title" content="Inlec Solutions Australia | Analytical & Automation Engineering">
+<meta property="og:description" content="Precision analytical device engineering services for petrochemical, refinery, LNG, and power industries.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<!-- ΓòÉΓòÉ NAV ΓòÉΓòÉ -->
+<nav id="nav">
+  <a href="#" class="logo-wrap">
+    <!-- Logo mark: stylised "I" circuit-board -->
+    <svg class="logo-icon" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="1" width="40" height="40" rx="2" fill="none" stroke="rgba(200,136,10,.35)" stroke-width="1"/>
+      <line x1="21" y1="4" x2="21" y2="38" stroke="#c8880a" stroke-width="2"/>
+      <line x1="9" y1="13" x2="33" y2="13" stroke="#c8880a" stroke-width="1.5"/>
+      <line x1="9" y1="29" x2="33" y2="29" stroke="#c8880a" stroke-width="1.5"/>
+      <circle cx="21" cy="21" r="4.5" fill="none" stroke="#e8a820" stroke-width="1.5"/>
+      <circle cx="21" cy="21" r="2" fill="#c8880a"/>
+      <circle cx="9" cy="13" r="2.5" fill="none" stroke="#c8880a" stroke-width="1"/>
+      <circle cx="33" cy="13" r="2.5" fill="none" stroke="#c8880a" stroke-width="1"/>
+      <circle cx="9" cy="29" r="2.5" fill="none" stroke="#c8880a" stroke-width="1"/>
+      <circle cx="33" cy="29" r="2.5" fill="none" stroke="#c8880a" stroke-width="1"/>
+    </svg>
+    <div class="logo-text-block">
+      <span class="logo-main">Inlec Solutions</span>
+      <span class="logo-sub">Australia Pty Ltd</span>
+    </div>
+  </a>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#expertise">Expertise</a>
+    <a href="#industries">Industries</a>
+    <a href="#team">Team</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <a href="#contact" class="nav-btn">Request Service</a>
+  <div class="burger" id="burger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ΓòÉΓòÉ MOBILE MENU ΓòÉΓòÉ -->
+<div id="mob-menu">
+  <a href="#about"      onclick="closeMenu()">About</a>
+  <a href="#services"   onclick="closeMenu()">Services</a>
+  <a href="#expertise"  onclick="closeMenu()">Expertise</a>
+  <a href="#industries" onclick="closeMenu()">Industries</a>
+  <a href="#team"       onclick="closeMenu()">Team</a>
+  <a href="#contact"    onclick="closeMenu()">Contact</a>
+</div>
+
+<!-- ΓòÉΓòÉ HERO ΓòÉΓòÉ -->
+<section id="hero">
+  <div class="hero-sky"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-scan"></div>
+  <div class="hero-orb"></div>
+  <!-- Industrial silhouette SVG -->
+  <svg class="hero-silhouette" viewBox="0 0 820 500" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMaxYMax meet">
+    <!-- refinery towers -->
+    <rect x="60" y="120" width="30" height="380" fill="white"/>
+    <rect x="50" y="100" width="50" height="30" fill="white"/>
+    <rect x="55" y="85" width="40" height="20" fill="white" rx="2"/>
+    <rect x="130" y="200" width="22" height="300" fill="white"/>
+    <rect x="122" y="185" width="38" height="20" fill="white"/>
+    <rect x="200" y="150" width="28" height="350" fill="white"/>
+    <rect x="190" y="130" width="48" height="28" fill="white"/>
+    <rect x="195" y="108" width="38" height="25" fill="white" rx="2"/>
+    <!-- horizontal pipe connecting towers -->
+    <rect x="60" y="250" width="170" height="8" fill="white"/>
+    <rect x="60" y="320" width="170" height="8" fill="white"/>
+    <!-- Building blocks -->
+    <rect x="260" y="300" width="80" height="200" fill="white"/>
+    <rect x="360" y="260" width="60" height="240" fill="white"/>
+    <rect x="440" y="320" width="100" height="180" fill="white"/>
+    <rect x="560" y="240" width="50" height="260" fill="white"/>
+    <rect x="630" y="290" width="70" height="210" fill="white"/>
+    <rect x="720" y="350" width="100" height="150" fill="white"/>
+    <!-- small details -->
+    <rect x="270" y="280" width="10" height="20" fill="white"/>
+    <rect x="300" y="270" width="10" height="30" fill="white"/>
+    <rect x="370" y="240" width="8" height="20" fill="white"/>
+    <rect x="450" y="300" width="10" height="20" fill="white"/>
+    <!-- ground line -->
+    <rect x="0" y="498" width="820" height="2" fill="white"/>
+    <!-- windows -->
+    <rect x="270" y="320" width="14" height="10" fill="rgba(200,136,10,0.5)"/>
+    <rect x="295" y="320" width="14" height="10" fill="rgba(200,136,10,0.5)"/>
+    <rect x="270" y="345" width="14" height="10" fill="rgba(200,136,10,0.3)"/>
+    <rect x="295" y="345" width="14" height="10" fill="rgba(200,136,10,0.5)"/>
+    <rect x="370" y="285" width="12" height="9" fill="rgba(200,136,10,0.4)"/>
+    <rect x="390" y="285" width="12" height="9" fill="rgba(200,136,10,0.3)"/>
+  </svg>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">Queensland, Australia ┬╖ Analytical Engineering</div>
+    <h1 class="hero-h1">
+      Precision<br>
+      <span class="accent">Analytical</span><br>
+      Engineering
+    </h1>
+    <p class="hero-p">
+      Inlec Solutions Australia Pty Ltd delivers world-class analytical device engineering services to petrochemical, refinery, LNG, and power industries.
+    </p>
+    <div class="hero-ctas">
+      <a href="#contact" class="btn-fill">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        Request a Consultation
+      </a>
+      <a href="#services" class="btn-line">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        View Services
+      </a>
+    </div>
+    <div class="hero-abn">
+      <span>ABN&nbsp; 690 817 880</span>
+      <span style="opacity:.4">|</span>
+      <span>Springfield Lakes QLD 4300</span>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-n" data-target="60"><em>0+</em></span>
+        <span class="stat-l">Years Combined<br>Experience</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-n" data-target="5"><em>0+</em></span>
+        <span class="stat-l">Years in<br>Operation</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-n" data-target="7"><em>0+</em></span>
+        <span class="stat-l">Analyzer<br>Specialisations</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-n" data-target="6"><em>0+</em></span>
+        <span class="stat-l">Industries<br>Served</span>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue">
+    <div class="scroll-wire"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ΓòÉΓòÉ TRUST BAR ΓòÉΓòÉ -->
+<div id="trust">
+  <div class="trust-inner">
+    <div class="trust-item r d1">
+      <div class="trust-icon">≡ƒÅ¢∩╕Å</div>
+      <div>
+        <h4>Registered in Australia</h4>
+        <p>ABN 690 817 880 ┬╖ Queensland</p>
+      </div>
+    </div>
+    <div class="trust-item r d2">
+      <div class="trust-icon">≡ƒö¼</div>
+      <div>
+        <h4>Multi-Brand Expertise</h4>
+        <p>ABB, Siemens, Yokogawa, SICK & more</p>
+      </div>
+    </div>
+    <div class="trust-item r d3">
+      <div class="trust-icon">ΓÜÖ∩╕Å</div>
+      <div>
+        <h4>Full-Lifecycle Services</h4>
+        <p>Design ┬╖ FAT ┬╖ SAT ┬╖ Calibration ┬╖ Repair</p>
+      </div>
+    </div>
+    <div class="trust-item r d4">
+      <div class="trust-icon">≡ƒîÅ</div>
+      <div>
+        <h4>Industry-Wide Coverage</h4>
+        <p>Petrochemical, Refinery, LNG, Power & more</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ΓòÉΓòÉ ABOUT ΓòÉΓòÉ -->
+<section id="about" class="section">
+  <div class="wrap">
+    <div class="about-grid">
+      <!-- CSS Analyzer Illustration -->
+      <div class="rl">
+        <div class="about-visual">
+          <div class="analyzer-art">
+            <div class="az-grid"></div>
+            <div class="az-glow1"></div>
+            <div class="az-glow2"></div>
+            <div class="az-body">
+              <div class="az-screen">
+                <div class="az-wave">
+                  <svg viewBox="0 0 200 60" preserveAspectRatio="none">
+                    <polyline points="0,45 20,30 40,48 60,20 80,38 100,15 120,35 140,25 160,42 180,18 200,35" fill="none" stroke="rgba(200,136,10,0.7)" stroke-width="1.8"/>
+                    <polyline points="0,55 20,44 40,58 60,38 80,52 100,32 120,50 140,40 160,54 180,35 200,48" fill="none" stroke="rgba(26,127,168,0.5)" stroke-width="1"/>
+                  </svg>
+                </div>
+                <div style="position:absolute;top:.4rem;left:.5rem;font-family:'Barlow Condensed',monospace;font-size:.55rem;color:rgba(200,136,10,.7);letter-spacing:.05em">
+                  STATUS: MEASURING<br>OΓéé: 20.48% &nbsp; T: 21.3┬░C<br>P: 101.3 kPa
+                </div>
+              </div>
+              <div class="az-btn-row">
+                <div class="az-btn"></div>
+                <div class="az-btn"></div>
+                <div class="az-btn"></div>
+                <div class="az-btn"></div>
+                <div class="az-btn"></div>
+              </div>
+              <div class="az-knob"></div>
+              <div class="az-ports">
+                <div class="az-port"></div>
+                <div class="az-port"></div>
+                <div class="az-port"></div>
+              </div>
+            </div>
+          </div>
+          <div class="about-badge">
+            REGISTERED<br>IN<br>AUSTRALIA
+          </div>
+        </div>
+      </div>
+
+      <!-- Copy -->
+      <div class="rr about-copy">
+        <div class="eyebrow">About Inlec Solutions</div>
+        <span class="rule"></span>
+        <h2>Built on Precision.<br>Trusted by Industry.</h2>
+        <p style="margin-top:1rem">
+          Inlec Solutions Australia Pty Ltd is an Analytical Devices Engineering Services company based in Springfield Lakes, Queensland. Over more than five years of operation, our team ΓÇö led by Director Devakumar Jayakumar ΓÇö has delivered precision commissioning, calibration, and field services to critical industrial facilities.
+        </p>
+        <p>
+          With a combined industry experience of over 60 years, we bring deep technical knowledge across all major analyzer platforms to every engagement. Our core strengths set us apart from generalist providers.
+        </p>
+        <div class="strength-list">
+          <div class="s-item">
+            <div class="s-ico">ΓÜÖ∩╕Å</div>
+            <div class="s-text">
+              <h4>Commissioning & Field Services</h4>
+              <p>Full-cycle commissioning from FAT through SAT, with on-site field support for complex analytical systems in live plant environments.</p>
+            </div>
+          </div>
+          <div class="s-item">
+            <div class="s-ico">≡ƒÄ»</div>
+            <div class="s-text">
+              <h4>Precision Calibration</h4>
+              <p>Traceable calibration services for all major analyzer types, ensuring regulatory compliance and measurement accuracy.</p>
+            </div>
+          </div>
+          <div class="s-item">
+            <div class="s-ico">≡ƒöº</div>
+            <div class="s-text">
+              <h4>Sample System Troubleshooting</h4>
+              <p>Expert diagnostics and engineered modification of sample conditioning systems to maximise analyzer uptime and reliability.</p>
+            </div>
+          </div>
+          <div class="s-item">
+            <div class="s-ico">≡ƒôÉ</div>
+            <div class="s-text">
+              <h4>Design, Consultancy & Engineering</h4>
+              <p>End-to-end engineering consultancy from system design and specification through to operational handover and documentation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ΓòÉΓòÉ SERVICES ΓòÉΓòÉ -->
+<section id="services" class="section">
+  <div class="wrap">
+    <div class="services-header r">
+      <div>
+        <div class="eyebrow">What We Do</div>
+        <span class="rule"></span>
+        <h2>Our Services</h2>
+      </div>
+      <p style="max-width:420px;color:var(--fog);line-height:1.7;font-size:.97rem;align-self:flex-end">
+        From initial design consultancy to on-site commissioning and ongoing maintenance ΓÇö the complete analytical engineering spectrum.
+      </p>
+    </div>
+    <div class="services-grid r">
+      <div class="svc-card">
+        <span class="svc-n">01</span>
+        <div class="svc-ico">≡ƒÅù∩╕Å</div>
+        <div class="svc-title">Design, Consultancy & Engineering</div>
+        <p class="svc-desc">Comprehensive engineering consultancy for new analyzer installations, upgrades, and sample system design ΓÇö from concept through to detailed engineering packages.</p>
+        <span class="svc-more">Enquire ΓåÆ</span>
+      </div>
+      <div class="svc-card">
+        <span class="svc-n">02</span>
+        <div class="svc-ico">≡ƒöî</div>
+        <div class="svc-title">Commissioning</div>
+        <p class="svc-desc">Expert commissioning of analytical instrumentation at petrochemical, refinery, LNG, and power facilities. Full documentation and handover support included.</p>
+        <span class="svc-more">Enquire ΓåÆ</span>
+      </div>
+      <div class="svc-card">
+        <span class="svc-n">03</span>
+        <div class="svc-ico">≡ƒÅ¡</div>
+        <div class="svc-title">Factory Acceptance Testing</div>
+        <p class="svc-desc">Independent FAT services that verify analyzer systems meet specification before shipment ΓÇö reducing risk and avoiding costly site rework.</p>
+        <span class="svc-more">Enquire ΓåÆ</span>
+      </div>
+      <div class="svc-card">
+        <span class="svc-n">04</span>
+        <div class="svc-ico">Γ£à</div>
+        <div class="svc-title">Site Acceptance Testing</div>
+        <p class="svc-desc">Thorough SAT procedures confirming installed systems perform within design parameters and are ready for operational handover.</p>
+        <span class="svc-more">Enquire ΓåÆ</span>
+      </div>
+      <div class="svc-card">
+        <span class="svc-n">05</span>
+        <div class="svc-ico">≡ƒÄ»</div>
+        <div class="svc-title">Calibration Services</div>
+        <p class="svc-desc">Traceable, standards-compliant calibration for gas chromatographs, in-situ analyzers, CEMS, and water quality instruments ΓÇö on-site or at your facility.</p>
+        <span class="svc-more">Enquire ΓåÆ</span>
+      </div>
+      <div class="svc-card">
+        <span class="svc-n">06</span>
+        <div class="svc-ico">≡ƒö¼</div>
+        <div class="svc-title">SCS Troubleshooting & Modification</div>
+        <p class="svc-desc">Diagnostic assessment and engineered modification of sample conditioning systems to improve reliability, reduce maintenance burden, and extend analyzer life.</p>
+        <span class="svc-more">Enquire ΓåÆ</span>
+      </div>
+      <div class="svc-card">
+        <span class="svc-n">07</span>
+        <div class="svc-ico">≡ƒ¢á∩╕Å</div>
+        <div class="svc-title">Repair & Rectification</div>
+        <p class="svc-desc">Skilled repair and rectification services for analyzers and associated equipment across all major OEM brands, minimising process downtime.</p>
+        <span class="svc-more">Enquire ΓåÆ</span>
+      </div>
+      <div class="svc-card svc-cta-card">
+        <div class="svc-ico" style="background:rgba(200,136,10,.2)">≡ƒô₧</div>
+        <div class="svc-title" style="color:var(--gold2)">Need a Custom Solution?</div>
+        <p class="svc-desc" style="color:var(--fog)">Our engineers are available to assess your specific requirements. Contact us to discuss a tailored scope of work.</p>
+        <a href="#contact" class="btn-fill" style="margin-top:1.2rem;font-size:.88rem;padding:.65rem 1.4rem">Get in Touch ΓåÆ</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ΓòÉΓòÉ EXPERTISE ΓòÉΓòÉ -->
+<section id="expertise" class="section">
+  <div class="wrap">
+    <div class="sec-head r">
+      <div class="eyebrow">Technical Depth</div>
+      <span class="rule"></span>
+      <h2 style="font-size:clamp(2rem,4.5vw,3.4rem);color:var(--white)">Analyzer Expertise</h2>
+      <p style="max-width:580px;color:var(--fog);line-height:1.7;margin-top:.5rem">
+        Proficient across every major analyzer category, working with all principal technology types and OEM platforms deployed in process industries.
+      </p>
+    </div>
+    <div class="exp-layout">
+      <!-- Tabs -->
+      <div class="exp-tabs rl">
+        <div class="exp-tab on" onclick="showExp(0,this)"><div class="exp-dot"></div><span class="exp-tab-name">Gas Chromatographs</span></div>
+        <div class="exp-tab"   onclick="showExp(1,this)"><div class="exp-dot"></div><span class="exp-tab-name">In-Situ Gas Analyzers</span></div>
+        <div class="exp-tab"   onclick="showExp(2,this)"><div class="exp-dot"></div><span class="exp-tab-name">Extractive Gas Analyzers</span></div>
+        <div class="exp-tab"   onclick="showExp(3,this)"><div class="exp-dot"></div><span class="exp-tab-name">Water Quality Analyzers</span></div>
+        <div class="exp-tab"   onclick="showExp(4,this)"><div class="exp-dot"></div><span class="exp-tab-name">Petroleum Physical Property</span></div>
+        <div class="exp-tab"   onclick="showExp(5,this)"><div class="exp-dot"></div><span class="exp-tab-name">CEMS</span></div>
+        <div class="exp-tab"   onclick="showExp(6,this)"><div class="exp-dot"></div><span class="exp-tab-name">Plant Instrumentation</span></div>
+      </div>
+      <!-- Detail panes -->
+      <div class="exp-detail rr">
+        <!-- 0: GC -->
+        <div class="exp-pane on" id="ep0">
+          <div class="exp-visual viz-gc">
+            <div class="viz-circuit"></div>
+            <div class="viz-bars">
+              <div class="viz-bar" style="--h:55%"></div><div class="viz-bar" style="--h:75%"></div>
+              <div class="viz-bar" style="--h:42%"></div><div class="viz-bar" style="--h:88%"></div>
+              <div class="viz-bar" style="--h:60%"></div><div class="viz-bar" style="--h:35%"></div>
+              <div class="viz-bar" style="--h:78%"></div><div class="viz-bar" style="--h:50%"></div>
+              <div class="viz-bar" style="--h:92%"></div><div class="viz-bar" style="--h:45%"></div>
+              <div class="viz-bar" style="--h:66%"></div><div class="viz-bar" style="--h:80%"></div>
+            </div>
+            <div class="viz-icon">≡ƒº¬</div>
+            <div class="viz-readout"><span class="viz-dot"></span>GC ACTIVE ┬╖ CH4: 94.2%</div>
+          </div>
+          <div class="exp-pane-title">Gas Chromatographs</div>
+          <p class="exp-pane-desc">Process gas chromatographs are mission-critical for feedstock measurement, product quality control, and custody transfer. Inlec Solutions engineers are fully trained across all major GC platforms and can deliver commissioning, calibration, maintenance, and troubleshooting services.</p>
+          <div class="exp-tags">
+            <span class="pill">ABB</span><span class="pill">Siemens</span>
+            <span class="pill">Yokogawa</span><span class="pill">Emerson</span><span class="pill">Daniel</span>
+          </div>
+        </div>
+        <!-- 1: In-situ -->
+        <div class="exp-pane" id="ep1">
+          <div class="exp-visual viz-insitu">
+            <div class="viz-circuit"></div>
+            <svg style="position:absolute;inset:0;width:100%;height:100%" viewBox="0 0 400 200" preserveAspectRatio="none">
+              <path d="M0,100 Q50,60 100,100 Q150,140 200,100 Q250,60 300,100 Q350,140 400,100" fill="none" stroke="rgba(200,136,10,.55)" stroke-width="2"/>
+              <path d="M0,120 Q50,80 100,120 Q150,160 200,120 Q250,80 300,120 Q350,160 400,120" fill="none" stroke="rgba(26,127,168,.35)" stroke-width="1.5"/>
+            </svg>
+            <div class="viz-icon">≡ƒîí∩╕Å</div>
+            <div class="viz-readout"><span class="viz-dot"></span>OΓéé: 20.48% ┬╖ TDL MODE</div>
+          </div>
+          <div class="exp-pane-title">In-Situ Gas Analyzers</div>
+          <p class="exp-pane-desc">In-situ analyzers measure directly within the process stream or stack, eliminating sample conditioning complexity. Inlec Solutions provides full-lifecycle support including installation, commissioning, and optical alignment for zirconia, TDL, and other in-situ instruments.</p>
+          <div class="exp-tags">
+            <span class="pill">Zirconia</span><span class="pill">Tuned Diode Laser</span>
+            <span class="pill">IR</span><span class="pill">UV</span><span class="pill">Opacity</span>
+          </div>
+        </div>
+        <!-- 2: Extractive -->
+        <div class="exp-pane" id="ep2">
+          <div class="exp-visual viz-extract">
+            <div class="viz-circuit"></div>
+            <div class="viz-icon">≡ƒÆ¿</div>
+            <svg style="position:absolute;bottom:0;left:0;right:0;width:100%;height:50%" viewBox="0 0 400 100" preserveAspectRatio="none">
+              <rect x="20" y="20" width="60" height="70" fill="rgba(200,136,10,.2)" stroke="rgba(200,136,10,.4)" stroke-width="1"/>
+              <rect x="100" y="35" width="200" height="8" fill="rgba(200,136,10,.3)"/>
+              <rect x="310" y="20" width="60" height="70" fill="rgba(200,136,10,.15)" stroke="rgba(200,136,10,.3)" stroke-width="1"/>
+              <circle cx="50" cy="55" r="18" fill="none" stroke="rgba(26,127,168,.6)" stroke-width="1.5"/>
+              <circle cx="50" cy="55" r="10" fill="rgba(26,127,168,.2)"/>
+            </svg>
+            <div class="viz-readout"><span class="viz-dot"></span>IR CELL ┬╖ COΓéé: 3.2%</div>
+          </div>
+          <div class="exp-pane-title">Extractive Gas Analyzers</div>
+          <p class="exp-pane-desc">Extractive systems draw a representative sample from the process for conditioning and measurement. Inlec Solutions handles the full scope ΓÇö from sample probe selection to sample conditioning system design, analyzer commissioning, and ongoing calibration.</p>
+          <div class="exp-tags">
+            <span class="pill">IR</span><span class="pill">UV</span>
+            <span class="pill">Paramagnetic</span><span class="pill">Electrochemical</span>
+          </div>
+        </div>
+        <!-- 3: Water -->
+        <div class="exp-pane" id="ep3">
+          <div class="exp-visual viz-water">
+            <div class="viz-circuit"></div>
+            <div class="viz-icon">≡ƒÆº</div>
+            <svg style="position:absolute;bottom:0;left:0;right:0;width:100%;height:40%" viewBox="0 0 400 80" preserveAspectRatio="none">
+              <path d="M0,40 Q100,0 200,40 Q300,80 400,40 L400,80 L0,80 Z" fill="rgba(26,127,168,.25)"/>
+              <path d="M0,55 Q100,20 200,55 Q300,90 400,55 L400,80 L0,80 Z" fill="rgba(26,127,168,.15)"/>
+            </svg>
+            <div class="viz-readout"><span class="viz-dot"></span>pH: 7.2 ┬╖ DO: 8.4 mg/L</div>
+          </div>
+          <div class="exp-pane-title">Water Quality Analyzers</div>
+          <p class="exp-pane-desc">Water quality monitoring is essential in power generation, cooling water systems, and effluent management. Inlec Solutions provides commissioning and maintenance across the full range of electrochemical and optical water quality instruments.</p>
+          <div class="exp-tags">
+            <span class="pill">pH</span><span class="pill">Conductivity</span>
+            <span class="pill">Dissolved Oxygen</span><span class="pill">Silica</span>
+            <span class="pill">Sodium</span><span class="pill">Oil-in-Water</span>
+          </div>
+        </div>
+        <!-- 4: Petroleum -->
+        <div class="exp-pane" id="ep4">
+          <div class="exp-visual viz-petro">
+            <div class="viz-circuit"></div>
+            <div class="viz-icon">≡ƒ¢ó∩╕Å</div>
+            <svg style="position:absolute;inset:0;width:100%;height:100%" viewBox="0 0 400 200" preserveAspectRatio="none">
+              <line x1="50" y1="180" x2="350" y2="180" stroke="rgba(200,136,10,.3)" stroke-width="1"/>
+              <polyline points="50,160 100,120 150,145 200,80 250,110 300,65 350,90" fill="none" stroke="rgba(200,136,10,.6)" stroke-width="2"/>
+              <circle cx="200" cy="80" r="4" fill="#c8880a"/>
+              <circle cx="300" cy="65" r="4" fill="#c8880a"/>
+            </svg>
+            <div class="viz-readout"><span class="viz-dot"></span>RVP: 68.4 kPa ┬╖ LIVE</div>
+          </div>
+          <div class="exp-pane-title">Petroleum Physical Property Analyzers</div>
+          <p class="exp-pane-desc">Physical property analyzers deliver real-time product quality data for blend optimisation and specification compliance. Our engineers have deep expertise in commissioning and maintaining these specialised instruments in refinery environments.</p>
+          <div class="exp-tags">
+            <span class="pill">Boiling Point</span><span class="pill">Flash Point</span>
+            <span class="pill">Freeze Point</span><span class="pill">RVP</span>
+          </div>
+        </div>
+        <!-- 5: CEMS -->
+        <div class="exp-pane" id="ep5">
+          <div class="exp-visual viz-cems">
+            <div class="viz-circuit"></div>
+            <div class="viz-icon">≡ƒÅ¡</div>
+            <svg style="position:absolute;inset:0;width:100%;height:100%" viewBox="0 0 400 200" preserveAspectRatio="none">
+              <rect x="160" y="50" width="80" height="150" fill="rgba(255,255,255,.06)" stroke="rgba(255,255,255,.12)" stroke-width="1"/>
+              <ellipse cx="200" cy="50" rx="40" ry="15" fill="rgba(255,255,255,.08)"/>
+              <path d="M185,30 Q190,10 195,20 Q200,0 205,15 Q210,5 215,25" fill="none" stroke="rgba(255,255,255,.25)" stroke-width="2"/>
+              <line x1="200" y1="100" x2="280" y2="100" stroke="rgba(200,136,10,.5)" stroke-width="1.5" stroke-dasharray="4 4"/>
+              <rect x="280" y="82" width="70" height="36" rx="2" fill="rgba(200,136,10,.1)" stroke="rgba(200,136,10,.4)" stroke-width="1"/>
+              <text x="290" y="98" font-family="monospace" font-size="8" fill="rgba(200,136,10,.8)">NOx:45</text>
+              <text x="290" y="110" font-family="monospace" font-size="8" fill="rgba(200,136,10,.8)">SO2:12</text>
+            </svg>
+            <div class="viz-readout"><span class="viz-dot"></span>CEMS ┬╖ NOΓéô: 45 mg/Nm┬│</div>
+          </div>
+          <div class="exp-pane-title">Continuous Emission Monitoring Systems</div>
+          <p class="exp-pane-desc">CEMS are mandatory for environmental regulatory compliance at combustion sources. Inlec Solutions delivers CEMS commissioning, calibration using certified gas standards, QA/QC procedures, and ongoing maintenance contracts for Australian and international facilities.</p>
+          <div class="exp-tags">
+            <span class="pill">SICK</span><span class="pill">SOΓéé/NOΓéô</span>
+            <span class="pill">CO/COΓéé</span><span class="pill">Opacity</span><span class="pill">Flow</span>
+          </div>
+        </div>
+        <!-- 6: Plant Instrumentation -->
+        <div class="exp-pane" id="ep6">
+          <div class="exp-visual viz-plant">
+            <div class="viz-circuit"></div>
+            <div class="viz-icon">≡ƒöº</div>
+            <svg style="position:absolute;inset:0;width:100%;height:100%" viewBox="0 0 400 200" preserveAspectRatio="none">
+              <circle cx="100" cy="100" r="40" fill="none" stroke="rgba(200,136,10,.4)" stroke-width="1.5"/>
+              <circle cx="100" cy="100" r="25" fill="rgba(200,136,10,.08)"/>
+              <line x1="100" y1="60" x2="100" y2="140" stroke="rgba(200,136,10,.3)" stroke-width="1"/>
+              <line x1="60" y1="100" x2="140" y2="100" stroke="rgba(200,136,10,.3)" stroke-width="1"/>
+              <line x1="100" y1="75" x2="120" y2="100" stroke="rgba(200,136,10,.7)" stroke-width="2"/>
+              <rect x="200" y="60" width="150" height="80" rx="2" fill="rgba(26,127,168,.1)" stroke="rgba(26,127,168,.4)" stroke-width="1"/>
+              <text x="220" y="90" font-family="monospace" font-size="9" fill="rgba(26,127,168,.9)">FLOW: 248.3</text>
+              <text x="220" y="105" font-family="monospace" font-size="9" fill="rgba(26,127,168,.9)">UNIT: m┬│/h</text>
+              <text x="220" y="120" font-family="monospace" font-size="9" fill="rgba(26,127,168,.7)">STATUS: OK</text>
+            </svg>
+            <div class="viz-readout"><span class="viz-dot"></span>FLOW: 248.3 m┬│/h</div>
+          </div>
+          <div class="exp-pane-title">Plant & Process Instrumentation</div>
+          <p class="exp-pane-desc">Beyond analyzers, Inlec Solutions supports broader plant instrumentation including flow, pressure, temperature, and level measurement devices ΓÇö providing installation, loop checking, and calibration across all major process instruments.</p>
+          <div class="exp-tags">
+            <span class="pill">Flow</span><span class="pill">Pressure</span>
+            <span class="pill">Temperature</span><span class="pill">Level</span><span class="pill">Control Valves</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ΓòÉΓòÉ INDUSTRIES ΓòÉΓòÉ -->
+<section id="industries" class="section">
+  <div class="wrap">
+    <div class="sec-head r" style="text-align:center">
+      <div class="eyebrow" style="justify-content:center">Markets We Serve</div>
+      <span class="rule" style="margin:0 auto .8rem"></span>
+      <h2 style="font-size:clamp(2rem,4.5vw,3.4rem);color:var(--white)">Industry Expertise</h2>
+      <p style="max-width:520px;margin:.5rem auto 0;color:var(--fog);line-height:1.7">
+        Our engineers have completed projects across a diverse range of critical industrial sectors in Australia and Southeast Asia.
+      </p>
+    </div>
+    <div class="ind-grid r">
+      <!-- Petrochemical -->
+      <div class="ind-card ind-petrochem">
+        <div class="ind-art">
+          <!-- Towers in CSS -->
+          <svg style="position:absolute;bottom:0;left:0;right:0;width:100%;height:80%" viewBox="0 0 400 200" preserveAspectRatio="xMidYMax meet">
+            <rect x="30" y="20" width="28" height="180" fill="rgba(255,255,255,.15)"/>
+            <rect x="22" y="10" width="44" height="18" fill="rgba(255,255,255,.12)"/>
+            <rect x="80" y="60" width="20" height="140" fill="rgba(255,255,255,.12)"/>
+            <rect x="120" y="30" width="32" height="170" fill="rgba(255,255,255,.13)"/>
+            <rect x="108" y="18" width="56" height="18" fill="rgba(255,255,255,.1)"/>
+            <rect x="30" y="100" width="122" height="6" fill="rgba(255,255,255,.1)"/>
+            <rect x="30" y="140" width="122" height="6" fill="rgba(255,255,255,.08)"/>
+            <rect x="200" y="80" width="60" height="120" fill="rgba(255,255,255,.1)"/>
+            <rect x="280" y="50" width="40" height="150" fill="rgba(255,255,255,.12)"/>
+            <rect x="340" y="90" width="50" height="110" fill="rgba(255,255,255,.1)"/>
+            <circle cx="44" cy="10" r="5" fill="rgba(200,136,10,.6)"/>
+          </svg>
+        </div>
+        <div class="ind-pattern"></div>
+        <div class="ind-over"></div>
+        <div class="ind-icon">≡ƒÅ¡</div>
+        <div class="ind-content">
+          <div class="ind-name">Petrochemical</div>
+          <div class="ind-sub">Process Industry</div>
+        </div>
+      </div>
+      <!-- Refinery -->
+      <div class="ind-card ind-refinery">
+        <div class="ind-art">
+          <svg style="position:absolute;bottom:0;left:0;right:0;width:100%;height:85%" viewBox="0 0 400 200" preserveAspectRatio="xMidYMax meet">
+            <rect x="40" y="50" width="50" height="150" fill="rgba(255,200,100,.12)"/>
+            <rect x="30" y="35" width="70" height="22" fill="rgba(255,200,100,.1)"/>
+            <rect x="110" y="80" width="35" height="120" fill="rgba(255,200,100,.1)"/>
+            <rect x="165" y="40" width="55" height="160" fill="rgba(255,200,100,.14)"/>
+            <rect x="155" y="25" width="75" height="22" fill="rgba(255,200,100,.1)"/>
+            <rect x="240" y="70" width="80" height="130" fill="rgba(255,200,100,.1)"/>
+            <rect x="340" y="100" width="50" height="100" fill="rgba(255,200,100,.08)"/>
+            <rect x="40" y="120" width="160" height="5" fill="rgba(255,200,100,.15)"/>
+            <!-- flame -->
+            <ellipse cx="65" cy="50" rx="6" ry="10" fill="rgba(255,100,0,.5)"/>
+            <ellipse cx="65" cy="44" rx="3" ry="6" fill="rgba(255,200,0,.6)"/>
+          </svg>
+        </div>
+        <div class="ind-pattern"></div>
+        <div class="ind-over"></div>
+        <div class="ind-icon">Γ¢╜</div>
+        <div class="ind-content">
+          <div class="ind-name">Oil Refinery</div>
+          <div class="ind-sub">Downstream</div>
+        </div>
+      </div>
+      <!-- LNG -->
+      <div class="ind-card ind-lng">
+        <div class="ind-art">
+          <svg style="position:absolute;bottom:0;left:0;right:0;width:100%;height:80%" viewBox="0 0 400 200" preserveAspectRatio="xMidYMax meet">
+            <!-- LNG storage tanks (cylinders in 2D) -->
+            <ellipse cx="80" cy="60" rx="55" ry="18" fill="rgba(100,200,255,.08)" stroke="rgba(100,200,255,.2)" stroke-width="1"/>
+            <rect x="25" y="60" width="110" height="140" fill="rgba(100,200,255,.07)" stroke="rgba(100,200,255,.15)" stroke-width="1"/>
+            <ellipse cx="80" cy="200" rx="55" ry="18" fill="rgba(100,200,255,.05)"/>
+            <ellipse cx="230" cy="70" rx="50" ry="17" fill="rgba(100,200,255,.08)" stroke="rgba(100,200,255,.2)" stroke-width="1"/>
+            <rect x="180" y="70" width="100" height="130" fill="rgba(100,200,255,.07)" stroke="rgba(100,200,255,.15)" stroke-width="1"/>
+            <rect x="140" y="115" width="40" height="5" fill="rgba(100,200,255,.2)"/>
+            <rect x="350" y="80" width="45" height="120" fill="rgba(100,200,255,.06)" stroke="rgba(100,200,255,.12)" stroke-width="1"/>
+          </svg>
+        </div>
+        <div class="ind-pattern"></div>
+        <div class="ind-over"></div>
+        <div class="ind-icon">Γ¥ä∩╕Å</div>
+        <div class="ind-content">
+          <div class="ind-name">LNG Plants</div>
+          <div class="ind-sub">Gas Processing</div>
+        </div>
+      </div>
+      <!-- Power -->
+      <div class="ind-card ind-power">
+        <div class="ind-art">
+          <svg style="position:absolute;bottom:0;left:0;right:0;width:100%;height:85%" viewBox="0 0 400 200" preserveAspectRatio="xMidYMax meet">
+            <!-- cooling towers -->
+            <path d="M30,200 Q45,80 65,100 Q85,120 100,200" fill="rgba(255,255,255,.1)" stroke="rgba(255,255,255,.2)" stroke-width="1"/>
+            <path d="M110,200 Q125,80 145,100 Q165,120 180,200" fill="rgba(255,255,255,.1)" stroke="rgba(255,255,255,.2)" stroke-width="1"/>
+            <path d="M55,88 Q65,78 75,88" fill="none" stroke="rgba(255,255,255,.25)" stroke-width="1"/>
+            <path d="M135,88 Q145,78 155,88" fill="none" stroke="rgba(255,255,255,.25)" stroke-width="1"/>
+            <!-- turbine hall -->
+            <rect x="200" y="60" width="180" height="140" fill="rgba(255,200,0,.08)" stroke="rgba(255,200,0,.15)" stroke-width="1"/>
+            <path d="M200,60 L290,20 L380,60" fill="rgba(255,200,0,.06)" stroke="rgba(255,200,0,.12)" stroke-width="1"/>
+            <!-- chimney -->
+            <rect x="355" y="0" width="20" height="200" fill="rgba(255,255,255,.08)"/>
+            <!-- lightning bolt -->
+            <path d="M290,50 L280,90 L295,90 L285,130 L305,80 L290,80 Z" fill="rgba(255,200,0,.4)"/>
+          </svg>
+        </div>
+        <div class="ind-pattern"></div>
+        <div class="ind-over"></div>
+        <div class="ind-icon">ΓÜí</div>
+        <div class="ind-content">
+          <div class="ind-name">Power Generation</div>
+          <div class="ind-sub">Energy</div>
+        </div>
+      </div>
+      <!-- Pharma -->
+      <div class="ind-card ind-pharma">
+        <div class="ind-art">
+          <svg style="position:absolute;bottom:0;left:0;right:0;width:100%;height:80%" viewBox="0 0 400 200" preserveAspectRatio="xMidYMax meet">
+            <!-- bioreactors / vessels -->
+            <rect x="50" y="60" width="80" height="140" rx="10" fill="rgba(200,150,255,.1)" stroke="rgba(200,150,255,.25)" stroke-width="1"/>
+            <ellipse cx="90" cy="60" rx="40" ry="15" fill="rgba(200,150,255,.08)" stroke="rgba(200,150,255,.2)" stroke-width="1"/>
+            <rect x="85" y="20" width="10" height="42" fill="rgba(200,150,255,.2)"/>
+            <rect x="160" y="90" width="65" height="110" rx="8" fill="rgba(200,150,255,.08)" stroke="rgba(200,150,255,.2)" stroke-width="1"/>
+            <ellipse cx="192" cy="90" rx="32" ry="12" fill="rgba(200,150,255,.06)"/>
+            <rect x="260" y="50" width="100" height="150" rx="4" fill="rgba(200,150,255,.07)" stroke="rgba(200,150,255,.15)" stroke-width="1"/>
+            <!-- cross symbol -->
+            <rect x="300" y="80" width="6" height="30" fill="rgba(200,150,255,.5)"/>
+            <rect x="288" y="90" width="30" height="6" fill="rgba(200,150,255,.5)"/>
+          </svg>
+        </div>
+        <div class="ind-pattern"></div>
+        <div class="ind-over"></div>
+        <div class="ind-icon">≡ƒÆè</div>
+        <div class="ind-content">
+          <div class="ind-name">Pharmaceuticals</div>
+          <div class="ind-sub">Life Sciences</div>
+        </div>
+      </div>
+      <!-- Waste incineration -->
+      <div class="ind-card ind-waste">
+        <div class="ind-art">
+          <svg style="position:absolute;bottom:0;left:0;right:0;width:100%;height:85%" viewBox="0 0 400 200" preserveAspectRatio="xMidYMax meet">
+            <rect x="60" y="80" width="160" height="120" fill="rgba(100,200,100,.08)" stroke="rgba(100,200,100,.2)" stroke-width="1"/>
+            <rect x="100" y="0" width="40" height="82" fill="rgba(100,200,100,.1)" stroke="rgba(100,200,100,.18)" stroke-width="1"/>
+            <rect x="155" y="20" width="30" height="62" fill="rgba(100,200,100,.08)" stroke="rgba(100,200,100,.15)" stroke-width="1"/>
+            <!-- smoke -->
+            <ellipse cx="120" cy="-5" rx="12" ry="8" fill="rgba(255,255,255,.06)"/>
+            <ellipse cx="130" cy="-20" rx="16" ry="10" fill="rgba(255,255,255,.04)"/>
+            <!-- recycling arrows -->
+            <path d="M260,80 Q300,60 340,80 Q320,40 280,40 Q260,40 260,80" fill="none" stroke="rgba(100,200,100,.4)" stroke-width="2"/>
+            <path d="M260,120 Q220,140 240,160 Q280,180 340,160 Q360,140 340,120" fill="none" stroke="rgba(100,200,100,.3)" stroke-width="2"/>
+          </svg>
+        </div>
+        <div class="ind-pattern"></div>
+        <div class="ind-over"></div>
+        <div class="ind-icon">ΓÖ╗∩╕Å</div>
+        <div class="ind-content">
+          <div class="ind-name">Waste Incineration</div>
+          <div class="ind-sub">Environmental</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ΓòÉΓòÉ TEAM ΓòÉΓòÉ -->
+<section id="team" class="section">
+  <div class="wrap">
+    <div class="sec-head r">
+      <div class="eyebrow">Our People</div>
+      <span class="rule"></span>
+      <h2 style="font-size:clamp(2rem,4.5vw,3.4rem);color:var(--white)">Team Strength</h2>
+    </div>
+    <div class="team-layout">
+      <!-- Director Card -->
+      <div class="rl">
+        <div class="dir-card">
+          <div class="dir-avatar">
+            <div class="avatar-bg"></div>
+            <div class="avatar-ring"></div>
+            <div class="avatar-ring2"></div>
+            <div class="avatar-initials">D.J.</div>
+          </div>
+          <div class="dir-accent"></div>
+          <div class="dir-body">
+            <div class="dir-name">Devakumar Jayakumar</div>
+            <div class="dir-role">Director &amp; Principal Engineer</div>
+            <div class="dir-exp-badge">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              20+ Years of Industry Experience
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Team copy -->
+      <div class="team-right rr">
+        <div>
+          <h3>Decades of Field-Proven Knowledge</h3>
+          <p>Our Director, Devakumar Jayakumar, brings extensive hands-on experience in analytical instrumentation and process control engineering. His expertise spans the full analyzer lifecycle ΓÇö from specification and design through commissioning, troubleshooting, and long-term asset management across multiple continents.</p>
+        </div>
+        <div>
+          <h3>Our Engineering Team</h3>
+          <p>Inlec Solutions engineers carry in-depth, practical experience across all major analyzer and instrumentation brands. The team has successfully delivered installation and commissioning projects in petrochemical complexes, refineries, LNG terminals, power plants, waste incineration facilities, food & beverage, cement, and pharmaceutical plants.</p>
+          <p style="margin-top:1rem">Beyond commissioning, the team excels at diagnosing under-performing sample conditioning systems ΓÇö identifying root causes and implementing engineered solutions that improve analyzer availability and reduce total cost of ownership.</p>
+        </div>
+        <div>
+          <div class="eyebrow" style="margin-bottom:.8rem">OEM Brands We Work With</div>
+          <div class="brand-chips">
+            <div class="b-chip">ABB</div>
+            <div class="b-chip">Siemens</div>
+            <div class="b-chip">Yokogawa</div>
+            <div class="b-chip">SICK</div>
+            <div class="b-chip">Emerson</div>
+            <div class="b-chip">E+H</div>
+            <div class="b-chip">Vaisala</div>
+            <div class="b-chip">+ More</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ΓòÉΓòÉ CONTACT ΓòÉΓòÉ -->
+<section id="contact" class="section">
+  <div class="wrap">
+    <div class="sec-head r">
+      <div class="eyebrow">Get In Touch</div>
+      <span class="rule"></span>
+      <h2 style="font-size:clamp(2rem,4.5vw,3.4rem);color:var(--white)">Contact Us</h2>
+      <p style="max-width:500px;color:var(--fog);line-height:1.7;margin-top:.5rem">
+        Ready to discuss your next project or service requirement? Our team is available to help.
+      </p>
+    </div>
+    <div class="contact-layout">
+      <!-- Info -->
+      <div class="c-info rl">
+        <div class="c-block">
+          <div class="c-ico">≡ƒÅó</div>
+          <div>
+            <div class="c-label">Office Address</div>
+            <div class="c-val">
+              Inlec Solutions Australia Pty Ltd<br>
+              28 Carnarvon Avenue<br>
+              Springfield Lakes QLD 4300<br>
+              Australia
+            </div>
+          </div>
+        </div>
+        <div class="c-block">
+          <div class="c-ico">≡ƒô₧</div>
+          <div>
+            <div class="c-label">Phone</div>
+            <div class="c-val">
+              <a href="tel:+61490937912">+61 490 937 912</a>
+            </div>
+          </div>
+        </div>
+        <div class="c-block">
+          <div class="c-ico">Γ£ë∩╕Å</div>
+          <div>
+            <div class="c-label">Email</div>
+            <div class="c-val">
+              <a href="mailto:info@inlecsolutions.com.au">info@inlecsolutions.com.au</a>
+            </div>
+          </div>
+        </div>
+        <div class="c-block">
+          <div class="c-ico">≡ƒòÉ</div>
+          <div>
+            <div class="c-label">Business Hours</div>
+            <div class="c-val">Monday ΓÇô Friday: 8:00 AM ΓÇô 5:30 PM AEST<br>Saturday: By Appointment</div>
+          </div>
+        </div>
+        <!-- ABN strip -->
+        <div class="abn-strip">
+          <div>
+            <div class="abn-label">Australian Business Number</div>
+            <div class="abn-val">690&thinsp;817&thinsp;880</div>
+          </div>
+        </div>
+        <!-- Map placeholder -->
+        <div class="map-placeholder">
+          <div class="map-grid"></div>
+          <div class="map-pin">
+            <div class="map-pin-icon">≡ƒôì</div>
+            <div style="font-family:'Barlow Condensed',sans-serif;font-size:.88rem;font-weight:600;color:var(--white);margin-top:.3rem">Springfield Lakes, QLD 4300</div>
+            <a href="https://maps.google.com/?q=28+Carnarvon+Avenue+Springfield+Lakes+QLD+4300" target="_blank" rel="noopener">Open in Google Maps ΓåÆ</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="c-form-wrap rr">
+        <div class="c-form-title">Request for Services</div>
+        <div id="contact-form">
+          <div class="form-row">
+            <div class="field">
+              <label for="f-name">Full Name *</label>
+              <input type="text" id="f-name" placeholder="Your name" required>
+            </div>
+            <div class="field">
+              <label for="f-company">Company</label>
+              <input type="text" id="f-company" placeholder="Your organisation">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="f-email">Email *</label>
+              <input type="email" id="f-email" placeholder="you@company.com" required>
+            </div>
+            <div class="field">
+              <label for="f-phone">Phone</label>
+              <input type="tel" id="f-phone" placeholder="+61 4__ ___ ___">
+            </div>
+          </div>
+          <div class="form-row one">
+            <div class="field">
+              <label for="f-service">Type of Service</label>
+              <select id="f-service">
+                <option value="">Select a serviceΓÇª</option>
+                <option>Design, Consultancy &amp; Engineering</option>
+                <option>Commissioning</option>
+                <option>Factory Acceptance Testing (FAT)</option>
+                <option>Site Acceptance Testing (SAT)</option>
+                <option>Calibration Services</option>
+                <option>SCS Troubleshooting &amp; Modification</option>
+                <option>Repair &amp; Rectification</option>
+                <option>General Enquiry</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row one">
+            <div class="field">
+              <label for="f-msg">Message *</label>
+              <textarea id="f-msg" placeholder="Briefly describe your requirement, plant type, and locationΓÇª" required></textarea>
+            </div>
+          </div>
+          <!-- honeypot -->
+          <input type="text" id="hp" style="display:none" tabindex="-1" autocomplete="off">
+          <button class="f-submit" onclick="sendForm(event)">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Send Message
+          </button>
+        </div>
+        <div class="f-ok" id="f-ok">
+          Γ£à &nbsp;Thank you! Your enquiry has been received.<br>We'll be in touch within one business day.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ΓòÉΓòÉ FOOTER ΓòÉΓòÉ -->
+<footer>
+  <div class="footer-wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo-wrap">
+          <svg class="logo-icon" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="40" height="40" rx="2" fill="none" stroke="rgba(200,136,10,.35)" stroke-width="1"/>
+            <line x1="21" y1="4" x2="21" y2="38" stroke="#c8880a" stroke-width="2"/>
+            <line x1="9" y1="13" x2="33" y2="13" stroke="#c8880a" stroke-width="1.5"/>
+            <line x1="9" y1="29" x2="33" y2="29" stroke="#c8880a" stroke-width="1.5"/>
+            <circle cx="21" cy="21" r="4.5" fill="none" stroke="#e8a820" stroke-width="1.5"/>
+            <circle cx="21" cy="21" r="2" fill="#c8880a"/>
+            <circle cx="9" cy="13" r="2.5" fill="none" stroke="#c8880a" stroke-width="1"/>
+            <circle cx="33" cy="13" r="2.5" fill="none" stroke="#c8880a" stroke-width="1"/>
+            <circle cx="9" cy="29" r="2.5" fill="none" stroke="#c8880a" stroke-width="1"/>
+            <circle cx="33" cy="29" r="2.5" fill="none" stroke="#c8880a" stroke-width="1"/>
+          </svg>
+          <div class="logo-text-block">
+            <span class="logo-main">Inlec Solutions</span>
+            <span class="logo-sub">Australia Pty Ltd</span>
+          </div>
+        </div>
+        <p>An Analytical Devices Engineering Services company based in Queensland, Australia. Delivering precision analyzer and automation engineering to critical industries across the region.</p>
+        <p style="margin-top:.8rem;font-family:'Barlow Condensed',sans-serif;font-size:.76rem;letter-spacing:.12em;color:rgba(138,172,191,.4)">ABN 690 817 880</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="#about">About Inlec</a></li>
+          <li><a href="#services">Our Services</a></li>
+          <li><a href="#expertise">Analyzer Expertise</a></li>
+          <li><a href="#industries">Industries</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#services">Design &amp; Consultancy</a></li>
+          <li><a href="#services">Commissioning</a></li>
+          <li><a href="#services">FAT / SAT</a></li>
+          <li><a href="#services">Calibration</a></li>
+          <li><a href="#services">SCS Troubleshooting</a></li>
+          <li><a href="#services">Repair &amp; Rectification</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+61490937912">+61 490 937 912</a></li>
+          <li><a href="mailto:info@inlecsolutions.com.au">info@inlecsolutions.com.au</a></li>
+          <li style="color:var(--fog);font-size:.87rem;line-height:1.5">28 Carnarvon Avenue<br>Springfield Lakes QLD 4300</li>
+        </ul>
+        <h5 style="margin-top:1.5rem">Connect</h5>
+        <ul>
+          <li><a href="#" target="_blank">LinkedIn</a></li>
+          <li><a href="#" target="_blank">Google Business</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>┬⌐ 2025 Inlec Solutions Australia Pty Ltd. All rights reserved.</span>
+      <span class="footer-abn">ABN 690 817 880 ┬╖ Springfield Lakes QLD 4300 ┬╖ Australia</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ΓòÉΓòÉ FLOATING CTA ΓòÉΓòÉ -->
+<a href="#contact" class="float-btn" id="floatBtn">
+  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.02 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+  Request Service
+</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>
