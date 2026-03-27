@@ -1,354 +1,2012 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inlec Solutions Australia | Engineered E&I Solutions</title>
-  <meta name="description" content="Inlec Solutions Australia provides premium electrical and instrumentation engineering, installation, and maintenance across Queensland and Australia.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://unpkg.com/lucide@latest"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inlec Solutions Australia | Analytical & Automation Engineering</title>
+<meta name="description" content="Inlec Solutions Australia Pty Ltd ΓÇô Analytical Devices Engineering Services in Queensland, Australia. 60+ years combined experience. ABN 690 817 880.">
+<meta property="og:title" content="Inlec Solutions Australia | Analytical & Automation Engineering">
+<meta property="og:description" content="Precision analytical device engineering services for petrochemical, refinery, LNG, and power industries.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+   DESIGN TOKENS
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ */
+:root{
+  --ink:      #080f18;
+  --deep:     #0b1929;
+  --navy:     #0f2440;
+  --steel:    #1c3d61;
+  --gold:     #c8880a;
+  --gold2:    #e8a820;
+  --gold3:    #ffc847;
+  --sky:      #1a7fa8;
+  --fog:      #8aacbf;
+  --ash:      #c2d5e2;
+  --white:    #f5f9fc;
+  --border:   rgba(200,136,10,.22);
+  --border2:  rgba(255,255,255,.07);
+  --card:     rgba(15,36,64,.7);
+}
+
+/* ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+   RESET & BASE
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Barlow',sans-serif;font-weight:400;
+  background:var(--ink);color:var(--ash);
+  overflow-x:hidden;
+}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+img{max-width:100%;display:block}
+button,input,select,textarea{font:inherit;outline:none}
+
+/* ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+   SCROLLBAR
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ */
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:var(--ink)}
+::-webkit-scrollbar-thumb{background:var(--gold);border-radius:2px}
+
+/* ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+   TYPE SCALE
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ */
+h1,h2,h3{font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:.02em;line-height:1.05}
+h4,h5,.label-text,nav a,button{font-family:'Barlow Condensed',sans-serif;font-weight:600}
+
+/* ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+   REUSABLE ATOMS
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ */
+.eyebrow{
+  display:inline-flex;align-items:center;gap:.6rem;
+  font-family:'Barlow Condensed',sans-serif;font-size:.78rem;font-weight:700;
+  letter-spacing:.25em;text-transform:uppercase;color:var(--gold2);
+  margin-bottom:.9rem;
+}
+.eyebrow::before{
+  content:'';display:block;width:28px;height:2px;
+  background:linear-gradient(90deg,var(--gold),var(--gold2));
+  flex-shrink:0;
+}
+.section{padding:clamp(4.5rem,9vw,8rem) clamp(1.4rem,5vw,4.5rem)}
+.wrap{max-width:1240px;margin:0 auto}
+.sec-head{margin-bottom:clamp(2.5rem,5vw,4.5rem)}
+
+/* Gold rule divider */
+.rule{
+  display:block;width:56px;height:3px;
+  background:linear-gradient(90deg,var(--gold),var(--gold3));
+  margin:.6rem 0 1.2rem;
+}
+
+/* Tag pill */
+.pill{
+  display:inline-block;
+  font-family:'Barlow Condensed',sans-serif;font-size:.74rem;font-weight:700;
+  letter-spacing:.1em;text-transform:uppercase;
+  padding:.28rem .75rem;border-radius:1px;
+  background:rgba(200,136,10,.14);
+  border:1px solid rgba(200,136,10,.35);
+  color:var(--gold2);
+}
+
+/* Buttons */
+.btn-fill{
+  display:inline-flex;align-items:center;gap:.5rem;
+  background:var(--gold);color:var(--ink);
+  font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:700;
+  letter-spacing:.1em;text-transform:uppercase;
+  padding:.75rem 2.2rem;border-radius:2px;border:none;cursor:pointer;
+  transition:background .2s,transform .15s,box-shadow .2s;
+  position:relative;overflow:hidden;
+}
+.btn-fill::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.15),transparent);
+  transform:translateX(-100%);
+  transition:transform .4s;
+}
+.btn-fill:hover{background:var(--gold2);transform:translateY(-2px);box-shadow:0 8px 28px rgba(200,136,10,.38)}
+.btn-fill:hover::after{transform:translateX(100%)}
+
+.btn-line{
+  display:inline-flex;align-items:center;gap:.5rem;
+  background:transparent;
+  border:1.5px solid rgba(255,255,255,.3);
+  color:var(--white);
+  font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:700;
+  letter-spacing:.1em;text-transform:uppercase;
+  padding:.75rem 2.2rem;border-radius:2px;cursor:pointer;
+  transition:all .2s;
+}
+.btn-line:hover{border-color:var(--gold);color:var(--gold)}
+
+/* ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+   NAV
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ */
+#nav{
+  position:fixed;top:0;left:0;right:0;z-index:200;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:.85rem clamp(1.4rem,5vw,4.5rem);
+  transition:background .35s,box-shadow .35s,padding .35s;
+}
+#nav.solid{
+  background:rgba(8,15,24,.97);
+  backdrop-filter:blur(14px);
+  box-shadow:0 1px 0 var(--border),0 4px 32px rgba(0,0,0,.5);
+  padding:.7rem clamp(1.4rem,5vw,4.5rem);
+}
+/* Logo */
+.logo-wrap{display:flex;align-items:center;gap:.75rem}
+.logo-icon{width:42px;height:42px;flex-shrink:0}
+.logo-text-block{line-height:1.1}
+.logo-main{
+  font-family:'Oswald',sans-serif;font-size:1.2rem;font-weight:600;
+  color:var(--white);letter-spacing:.05em;display:block;
+}
+.logo-sub{
+  font-family:'Barlow Condensed',sans-serif;font-size:.62rem;font-weight:600;
+  color:var(--gold2);letter-spacing:.22em;text-transform:uppercase;display:block;
+}
+/* Links */
+.nav-links{display:flex;align-items:center;gap:2rem}
+.nav-links a{
+  font-family:'Barlow Condensed',sans-serif;font-size:.95rem;font-weight:600;
+  letter-spacing:.08em;text-transform:uppercase;
+  color:rgba(194,213,226,.75);
+  position:relative;padding-bottom:3px;
+  transition:color .2s;
+}
+.nav-links a::after{
+  content:'';position:absolute;bottom:0;left:0;width:0;height:2px;
+  background:var(--gold);transition:width .25s;
+}
+.nav-links a:hover{color:var(--white)}
+.nav-links a:hover::after{width:100%}
+.nav-btn{
+  background:var(--gold);color:var(--ink);
+  font-family:'Barlow Condensed',sans-serif;font-size:.88rem;font-weight:700;
+  letter-spacing:.12em;text-transform:uppercase;
+  padding:.55rem 1.4rem;border-radius:2px;border:none;cursor:pointer;
+  transition:background .2s,transform .15s;
+}
+.nav-btn:hover{background:var(--gold2);transform:translateY(-1px)}
+/* Hamburger */
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:5px}
+.burger span{display:block;width:22px;height:2px;background:var(--white);border-radius:1px;transition:.3s}
+.burger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.burger.open span:nth-child(2){opacity:0;transform:scaleX(0)}
+.burger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+/* Mobile menu */
+#mob-menu{
+  display:none;position:fixed;inset:0;top:64px;
+  background:rgba(8,15,24,.98);backdrop-filter:blur(18px);
+  flex-direction:column;align-items:center;justify-content:center;gap:2.5rem;z-index:199;
+}
+#mob-menu.open{display:flex}
+#mob-menu a{
+  font-family:'Oswald',sans-serif;font-size:2rem;font-weight:500;
+  color:rgba(194,213,226,.7);letter-spacing:.1em;text-transform:uppercase;
+  transition:color .2s;
+}
+#mob-menu a:hover{color:var(--gold2)}
+
+/* ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+   HERO ΓÇö PURE CSS SCENE
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ */
+#hero{
+  position:relative;min-height:100vh;
+  display:flex;align-items:center;
+  overflow:hidden;background:var(--ink);
+}
+/* Sky gradient */
+.hero-sky{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse 80% 60% at 70% 0%, rgba(26,127,168,.25) 0%, transparent 55%),
+    radial-gradient(ellipse 50% 40% at 30% 100%, rgba(200,136,10,.18) 0%, transparent 55%),
+    linear-gradient(175deg, #090f1a 0%, #0b1929 40%, #0f2440 100%);
+}
+/* Fine grid */
+.hero-grid{
+  position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(200,136,10,.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(200,136,10,.055) 1px, transparent 1px);
+  background-size:52px 52px;
+}
+/* Industrial silhouette drawn in SVG */
+.hero-silhouette{
+  position:absolute;bottom:0;right:0;width:55%;max-width:820px;
+  opacity:.18;
+}
+/* Scan line animation */
+.hero-scan{
+  position:absolute;inset:0;
+  background:linear-gradient(to bottom, transparent 0%, rgba(26,127,168,.04) 50%, transparent 100%);
+  background-size:100% 200%;
+  animation:scan 6s ease-in-out infinite;
+}
+@keyframes scan{0%,100%{background-position:0 -100%}50%{background-position:0 100%}}
+/* Glowing orb */
+.hero-orb{
+  position:absolute;top:15%;right:28%;
+  width:280px;height:280px;border-radius:50%;
+  background:radial-gradient(circle, rgba(200,136,10,.18) 0%, transparent 70%);
+  animation:orb 4s ease-in-out infinite alternate;
+}
+@keyframes orb{from{transform:scale(1);opacity:.6}to{transform:scale(1.15);opacity:1}}
+/* Content */
+.hero-content{
+  position:relative;z-index:5;
+  padding:0 clamp(1.4rem,5vw,4.5rem);
+  max-width:1240px;margin:0 auto;width:100%;
+  padding-top:100px;padding-bottom:60px;
+}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:.6rem;
+  font-family:'Barlow Condensed',sans-serif;font-size:.78rem;font-weight:700;
+  letter-spacing:.28em;text-transform:uppercase;color:var(--gold2);
+  margin-bottom:1.4rem;animation:fadeUp .7s ease both;
+}
+.hero-eyebrow::before{content:'';display:block;width:28px;height:2px;background:var(--gold)}
+.hero-h1{
+  font-family:'Oswald',sans-serif;font-weight:700;
+  font-size:clamp(3rem,9.5vw,8.5rem);
+  color:var(--white);line-height:.95;letter-spacing:.01em;
+  animation:fadeUp .7s .1s ease both;
+}
+.hero-h1 .accent{
+  display:block;
+  background:linear-gradient(90deg, var(--gold), var(--gold3));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.hero-p{
+  max-width:520px;
+  font-size:1.1rem;color:var(--fog);line-height:1.75;
+  margin:1.6rem 0 2.2rem;
+  animation:fadeUp .7s .22s ease both;
+}
+.hero-ctas{
+  display:flex;flex-wrap:wrap;gap:.9rem;
+  animation:fadeUp .7s .34s ease both;
+}
+/* ABN strip */
+.hero-abn{
+  display:inline-flex;align-items:center;gap:.7rem;margin-top:1.2rem;
+  font-family:'Barlow Condensed',sans-serif;font-size:.8rem;font-weight:600;
+  letter-spacing:.15em;color:rgba(138,172,191,.55);
+  animation:fadeUp .7s .46s ease both;
+}
+.hero-abn::before{content:'';display:block;width:1px;height:16px;background:rgba(138,172,191,.25)}
+/* Stats bar */
+.hero-stats{
+  display:flex;flex-wrap:wrap;gap:2rem clamp(2rem,5vw,4rem);
+  margin-top:3.5rem;
+  padding-top:2.5rem;
+  border-top:1px solid rgba(255,255,255,.07);
+  animation:fadeUp .7s .5s ease both;
+}
+.stat-item{display:flex;flex-direction:column;gap:.15rem}
+.stat-n{
+  font-family:'Oswald',sans-serif;font-weight:700;
+  font-size:2.8rem;color:var(--white);line-height:1;
+}
+.stat-n em{
+  font-style:normal;
+  background:linear-gradient(90deg,var(--gold),var(--gold3));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.stat-l{
+  font-family:'Barlow Condensed',sans-serif;font-size:.72rem;font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--fog);
+}
+/* scroll cue */
+.scroll-cue{
+  position:absolute;bottom:2rem;left:clamp(1.4rem,5vw,4.5rem);
+  display:flex;align-items:center;gap:.7rem;
+  font-family:'Barlow Condensed',sans-serif;font-size:.7rem;font-weight:600;
+  letter-spacing:.2em;text-transform:uppercase;color:rgba(138,172,191,.45);
+  animation:fadeUp .7s .9s ease both;
+}
+.scroll-wire{
+  width:1px;height:40px;
+  background:linear-gradient(var(--gold),transparent);
+  animation:wire 2s ease infinite;
+}
+@keyframes wire{0%,100%{height:28px;opacity:.4}50%{height:44px;opacity:1}}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+
+/* ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+   TRUST BAR
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ */
+#trust{
+  background:var(--deep);
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  padding:0;
+}
+.trust-inner{
+  max-width:1240px;margin:0 auto;
+  display:flex;flex-wrap:wrap;
+  border-left:1px solid var(--border2);
+}
+.trust-item{
+  flex:1;min-width:200px;
+  padding:1.5rem 2rem;
+  border-right:1px solid var(--border2);
+  display:flex;align-items:center;gap:1rem;
+}
+.trust-icon{
+  width:42px;height:42px;min-width:42px;
+  background:rgba(200,136,10,.1);border-radius:2px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.3rem;
+}
+.trust-item h4{
+  font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:700;
+  color:var(--white);letter-spacing:.04em;
+}
+.trust-item p{font-size:.82rem;color:var(--fog);margin-top:.1rem}
+
+/* ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+   ABOUT
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ */
+#about{background:var(--deep)}
+.about-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:clamp(2.5rem,5vw,5rem);align-items:start;
+}
+/* CSS art: industrial analyzer */
+.about-visual{
+  position:relative;border-radius:2px;overflow:visible;
+}
+.analyzer-art{
+  width:100%;aspect-ratio:4/3;border-radius:2px;overflow:hidden;
+  position:relative;
+  background:linear-gradient(135deg, #0b1929 0%, #0f2440 60%, #1c3d61 100%);
+  border:1px solid rgba(200,136,10,.3);
+}
+/* Device body */
+.az-body{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  width:62%;aspect-ratio:2/3;
+  background:linear-gradient(160deg,#1c3d61,#0f2440);
+  border:1.5px solid rgba(200,136,10,.5);
+  border-radius:4px;
+  box-shadow:0 0 60px rgba(26,127,168,.2),0 0 100px rgba(200,136,10,.1);
+  display:flex;flex-direction:column;align-items:center;padding:1rem;gap:.6rem;
+}
+.az-screen{
+  width:90%;aspect-ratio:16/9;
+  background:linear-gradient(135deg,#0a2a3a,#0d3a50);
+  border:1px solid rgba(26,127,168,.6);
+  border-radius:2px;overflow:hidden;position:relative;
+}
+.az-screen::before{
+  content:'';position:absolute;inset:0;
+  background:repeating-linear-gradient(0deg,rgba(26,127,168,.04) 0px,transparent 1px,transparent 8px);
+}
+.az-wave{
+  position:absolute;bottom:20%;left:0;right:0;
+  height:30%;overflow:hidden;
+}
+.az-wave svg{display:block;width:100%;height:100%}
+.az-btn-row{display:flex;gap:.35rem}
+.az-btn{
+  width:18px;height:8px;border-radius:1px;
+  background:rgba(200,136,10,.6);
+  box-shadow:0 0 6px rgba(200,136,10,.4);
+}
+.az-btn:nth-child(2){background:rgba(26,127,168,.6);box-shadow:0 0 6px rgba(26,127,168,.4)}
+.az-btn:nth-child(3){background:rgba(255,255,255,.2)}
+.az-knob{
+  width:32px;height:32px;border-radius:50%;
+  background:radial-gradient(circle at 35% 35%,#2a5070,#0f2440);
+  border:1.5px solid rgba(200,136,10,.4);
+  margin-top:.3rem;
+}
+.az-ports{
+  display:flex;gap:.5rem;margin-top:.3rem;
+}
+.az-port{
+  width:12px;height:14px;border-radius:1px 1px 0 0;
+  background:rgba(200,136,10,.3);border:1px solid rgba(200,136,10,.5);
+}
+/* Glow circles behind device */
+.az-glow1{
+  position:absolute;top:10%;left:10%;width:80px;height:80px;border-radius:50%;
+  background:radial-gradient(circle,rgba(26,127,168,.35),transparent);
+  animation:pulse 3s ease infinite;
+}
+.az-glow2{
+  position:absolute;bottom:15%;right:12%;width:60px;height:60px;border-radius:50%;
+  background:radial-gradient(circle,rgba(200,136,10,.3),transparent);
+  animation:pulse 3s 1.5s ease infinite;
+}
+@keyframes pulse{0%,100%{transform:scale(1);opacity:.6}50%{transform:scale(1.3);opacity:1}}
+/* Grid lines on visual */
+.az-grid{
+  position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(200,136,10,.05) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(200,136,10,.05) 1px,transparent 1px);
+  background-size:32px 32px;
+}
+.about-badge{
+  position:absolute;bottom:-1.8rem;right:-1.8rem;
+  background:var(--gold);color:var(--ink);
+  font-family:'Oswald',sans-serif;font-size:1.05rem;font-weight:600;
+  letter-spacing:.06em;text-align:center;line-height:1.3;
+  padding:1.1rem 1.4rem;
+  box-shadow:0 8px 36px rgba(200,136,10,.45);
+}
+.about-copy h2{font-size:clamp(2rem,4.5vw,3.4rem);color:var(--white);margin-bottom:.4rem}
+.about-copy p{color:var(--fog);line-height:1.78;font-size:1rem;margin-bottom:1rem}
+.strength-list{display:flex;flex-direction:column;gap:.75rem;margin-top:1.6rem}
+.s-item{
+  display:flex;align-items:flex-start;gap:.9rem;
+  padding:1rem 1.1rem;
+  background:rgba(255,255,255,.03);
+  border:1px solid rgba(255,255,255,.06);
+  border-left:3px solid var(--gold);
+  border-radius:2px;
+  transition:background .2s;
+}
+.s-item:hover{background:rgba(200,136,10,.07)}
+.s-ico{
+  width:36px;height:36px;min-width:36px;border-radius:2px;
+  background:rgba(200,136,10,.12);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.05rem;margin-top:.05rem;
+}
+.s-text h4{
+  font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:700;
+  color:var(--white);margin-bottom:.15rem;
+}
+.s-text p{font-size:.88rem;color:var(--fog);line-height:1.55}
+
+/* ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+   SERVICES
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ */
+#services{background:var(--ink)}
+.services-header{
+  display:flex;align-items:flex-end;justify-content:space-between;
+  gap:2rem;flex-wrap:wrap;margin-bottom:clamp(2rem,4vw,3.5rem);
+}
+.services-header h2{font-size:clamp(2rem,4.5vw,3.4rem);color:var(--white)}
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:1px;
+  background:var(--border);
+  border:1px solid var(--border);
+}
+.svc-card{
+  background:var(--ink);
+  padding:2.2rem 1.8rem;
+  position:relative;overflow:hidden;
+  transition:background .25s;
+  display:flex;flex-direction:column;
+}
+.svc-card::before{
+  content:'';position:absolute;bottom:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--gold),var(--gold3));
+  transform:scaleX(0);transform-origin:left;transition:transform .3s;
+}
+.svc-card:hover{background:rgba(200,136,10,.06)}
+.svc-card:hover::before{transform:scaleX(1)}
+.svc-n{
+  font-family:'Oswald',sans-serif;font-size:3.5rem;font-weight:700;
+  color:rgba(200,136,10,.1);line-height:1;position:absolute;top:.8rem;right:1rem;
+  letter-spacing:.03em;transition:color .3s;
+}
+.svc-card:hover .svc-n{color:rgba(200,136,10,.2)}
+.svc-ico{
+  width:48px;height:48px;background:rgba(200,136,10,.1);border-radius:2px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.4rem;margin-bottom:1.2rem;
+}
+.svc-title{
+  font-family:'Barlow Condensed',sans-serif;font-size:1.15rem;font-weight:700;
+  color:var(--white);margin-bottom:.6rem;letter-spacing:.03em;
+}
+.svc-desc{font-size:.88rem;color:var(--fog);line-height:1.65;flex:1}
+.svc-more{
+  display:inline-flex;align-items:center;gap:.35rem;
+  margin-top:1.2rem;
+  font-family:'Barlow Condensed',sans-serif;font-size:.82rem;font-weight:700;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--gold);
+  opacity:0;transform:translateX(-6px);transition:.25s;
+}
+.svc-card:hover .svc-more{opacity:1;transform:none}
+/* CTA card */
+.svc-cta-card{
+  background:rgba(200,136,10,.07);
+  border:1px solid rgba(200,136,10,.3);
+}
+.svc-cta-card::before{display:none}
+
+/* ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+   EXPERTISE ΓÇö TAB PANEL
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ */
+#expertise{background:var(--deep)}
+.exp-layout{
+  display:grid;grid-template-columns:1fr 1.65fr;gap:clamp(2.5rem,5vw,5rem);
+  align-items:start;
+}
+.exp-tabs{display:flex;flex-direction:column;gap:.5rem}
+.exp-tab{
+  padding:.95rem 1.2rem;
+  border:1px solid rgba(255,255,255,.06);border-radius:2px;
+  cursor:pointer;transition:all .2s;
+  display:flex;align-items:center;gap:.9rem;
+}
+.exp-tab:hover,.exp-tab.on{
+  border-color:var(--gold);
+  background:rgba(200,136,10,.08);
+}
+.exp-dot{
+  width:8px;height:8px;min-width:8px;border-radius:50%;
+  background:var(--steel);transition:background .2s;
+}
+.exp-tab.on .exp-dot,.exp-tab:hover .exp-dot{
+  background:var(--gold);
+  box-shadow:0 0 8px rgba(200,136,10,.6);
+}
+.exp-tab-name{
+  font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:600;
+  color:var(--fog);transition:color .2s;
+}
+.exp-tab.on .exp-tab-name,.exp-tab:hover .exp-tab-name{color:var(--white)}
+/* Detail pane */
+.exp-detail{position:sticky;top:88px}
+.exp-pane{display:none}
+.exp-pane.on{display:block;animation:fadeUp .3s ease}
+/* Analyzer illustration per type */
+.exp-visual{
+  width:100%;height:200px;border-radius:2px;overflow:hidden;
+  margin-bottom:1.5rem;position:relative;
+  border:1px solid var(--border);
+}
+.exp-pane-title{
+  font-family:'Barlow Condensed',sans-serif;font-size:1.4rem;font-weight:700;
+  color:var(--white);margin-bottom:.5rem;
+}
+.exp-pane-desc{font-size:.92rem;color:var(--fog);line-height:1.72;margin-bottom:1rem}
+.exp-tags{display:flex;flex-wrap:wrap;gap:.4rem}
+
+/* CSS illustrations for each analyzer type */
+.viz-gc{background:linear-gradient(135deg,#0a1e30 0%,#0d2a44 100%)}
+.viz-insitu{background:linear-gradient(135deg,#0c1f14 0%,#122e20 100%)}
+.viz-extract{background:linear-gradient(135deg,#1a1505 0%,#2a2008 100%)}
+.viz-water{background:linear-gradient(135deg,#071a2a 0%,#0c2840 100%)}
+.viz-petro{background:linear-gradient(135deg,#1e0a00 0%,#2e1200 100%)}
+.viz-cems{background:linear-gradient(135deg,#0a0a1e 0%,#111130 100%)}
+.viz-plant{background:linear-gradient(135deg,#0a1010 0%,#0f1e20 100%)}
+/* Generic circuit overlay for all panes */
+.viz-circuit{
+  position:absolute;inset:0;opacity:.4;
+  background-image:
+    repeating-linear-gradient(0deg, rgba(200,136,10,.08) 0,transparent 1px,transparent 36px),
+    repeating-linear-gradient(90deg, rgba(200,136,10,.08) 0,transparent 1px,transparent 36px);
+}
+/* Center icon in each viz */
+.viz-icon{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  font-size:4.5rem;opacity:.55;filter:drop-shadow(0 0 24px var(--gold));
+}
+/* Animated readout */
+.viz-readout{
+  position:absolute;bottom:1rem;right:1rem;
+  background:rgba(0,0,0,.6);border:1px solid var(--border);
+  padding:.4rem .8rem;border-radius:1px;
+  font-family:'Barlow Condensed',sans-serif;font-size:.8rem;font-weight:600;
+  color:var(--gold2);letter-spacing:.05em;
+}
+.viz-dot{
+  display:inline-block;width:6px;height:6px;border-radius:50%;
+  background:var(--gold);margin-right:.35rem;
+  animation:blink 1.4s ease infinite;
+}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
+/* Bar chart animation */
+.viz-bars{
+  position:absolute;bottom:0;left:0;right:0;
+  display:flex;align-items:flex-end;gap:3px;padding:0 12px;height:60%;
+}
+.viz-bar{
+  flex:1;border-radius:1px 1px 0 0;
+  background:rgba(200,136,10,.35);
+  animation:barGrow 1.2s ease both;
+}
+@keyframes barGrow{from{height:0}to{height:var(--h)}}
+
+/* ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+   INDUSTRIES
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ */
+#industries{background:var(--ink)}
+.ind-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:1rem;
+}
+.ind-card{
+  position:relative;border-radius:2px;overflow:hidden;
+  aspect-ratio:16/10;cursor:default;
+  border:1px solid rgba(255,255,255,.05);
+  transition:border-color .3s;
+}
+.ind-card:hover{border-color:var(--border)}
+/* Each card has a unique CSS gradient scene */
+.ind-art{position:absolute;inset:0;transition:transform .5s}
+.ind-card:hover .ind-art{transform:scale(1.04)}
+/* gradient themes per industry */
+.ind-petrochem .ind-art{background:linear-gradient(150deg,#0a1520 0%,#1a3a5c 50%,#2a5c4a 100%)}
+.ind-refinery  .ind-art{background:linear-gradient(150deg,#1a0a00 0%,#3a1a00 50%,#1a2a3a 100%)}
+.ind-lng       .ind-art{background:linear-gradient(150deg,#000a1a 0%,#001a40 50%,#0a1a30 100%)}
+.ind-power     .ind-art{background:linear-gradient(150deg,#0a0a00 0%,#2a2a00 50%,#1a0a00 100%)}
+.ind-pharma    .ind-art{background:linear-gradient(150deg,#0a001a 0%,#1a0030 50%,#000a1a 100%)}
+.ind-waste     .ind-art{background:linear-gradient(150deg,#001010 0%,#003030 50%,#0a1a0a 100%)}
+/* SVG pattern overlay */
+.ind-pattern{
+  position:absolute;inset:0;opacity:.12;
+  background-image:repeating-linear-gradient(
+    45deg,rgba(255,255,255,.15) 0,rgba(255,255,255,.15) 1px,transparent 0,transparent 50%
+  );
+  background-size:12px 12px;
+}
+/* Tower/facility silhouettes made in CSS */
+.ind-scene{position:absolute;inset:0;display:flex;align-items:flex-end;justify-content:center;padding:0 10%}
+.tower{background:rgba(255,255,255,.12);position:absolute;bottom:0;border-radius:1px 1px 0 0}
+.smoke{
+  position:absolute;width:6px;border-radius:50%;
+  background:rgba(255,255,255,.08);
+  animation:smokeDrift 3s ease-in-out infinite;
+}
+@keyframes smokeDrift{from{transform:translateY(0) scaleX(1);opacity:.4}to{transform:translateY(-40px) scaleX(2);opacity:0}}
+/* Overlay gradient */
+.ind-over{
+  position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(8,15,24,.9) 0%,rgba(8,15,24,.35) 55%,transparent 100%);
+}
+.ind-content{position:absolute;bottom:0;left:0;right:0;padding:1.1rem 1.2rem}
+.ind-name{
+  font-family:'Barlow Condensed',sans-serif;font-size:1.15rem;font-weight:700;
+  color:var(--white);letter-spacing:.04em;
+}
+.ind-sub{
+  display:inline-block;margin-top:.25rem;
+  font-family:'Barlow Condensed',sans-serif;font-size:.68rem;font-weight:700;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--gold2);
+  border-top:1.5px solid var(--gold);padding-top:.22rem;
+}
+/* Tiny icon on each card */
+.ind-icon{
+  position:absolute;top:.9rem;right:.9rem;
+  width:36px;height:36px;border-radius:50%;
+  background:rgba(200,136,10,.18);border:1px solid rgba(200,136,10,.4);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1rem;
+}
+
+/* ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+   TEAM
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ */
+#team{background:var(--deep);position:relative;overflow:hidden}
+#team::after{
+  content:'INLEC';
+  position:absolute;right:-2rem;top:50%;transform:translateY(-50%);
+  font-family:'Oswald',sans-serif;font-size:18rem;font-weight:700;
+  color:rgba(255,255,255,.015);letter-spacing:.1em;pointer-events:none;
+  white-space:nowrap;
+}
+.team-layout{
+  display:grid;grid-template-columns:360px 1fr;gap:clamp(3rem,6vw,6rem);align-items:start;
+}
+/* Director card */
+.dir-card{
+  background:var(--card);border:1px solid var(--border);border-radius:2px;overflow:hidden;
+}
+.dir-avatar{
+  width:100%;aspect-ratio:1;
+  position:relative;overflow:hidden;
+  background:linear-gradient(135deg,#1c3d61 0%,#0f2440 100%);
+  display:flex;align-items:center;justify-content:center;
+}
+/* CSS portrait */
+.avatar-art{
+  width:100%;height:100%;position:relative;
+  display:flex;align-items:center;justify-content:center;
+}
+.avatar-bg{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse 60% 80% at 50% 100%,rgba(200,136,10,.15) 0%,transparent 60%),
+    linear-gradient(180deg,#1c3d61 0%,#0f2440 100%);
+}
+.avatar-initials{
+  position:relative;z-index:2;
+  font-family:'Oswald',sans-serif;font-size:5rem;font-weight:700;
+  color:rgba(255,255,255,.2);letter-spacing:.1em;
+}
+.avatar-ring{
+  position:absolute;bottom:-30px;left:50%;transform:translateX(-50%);
+  width:160px;height:160px;border-radius:50%;
+  border:1px solid rgba(200,136,10,.2);
+  z-index:1;
+}
+.avatar-ring2{
+  position:absolute;bottom:-60px;left:50%;transform:translateX(-50%);
+  width:240px;height:240px;border-radius:50%;
+  border:1px solid rgba(200,136,10,.1);
+}
+.dir-accent{height:4px;background:linear-gradient(90deg,var(--gold),var(--gold3))}
+.dir-body{padding:1.4rem 1.5rem}
+.dir-name{
+  font-family:'Oswald',sans-serif;font-size:1.7rem;font-weight:600;
+  color:var(--white);letter-spacing:.03em;margin-bottom:.2rem;
+}
+.dir-role{
+  font-family:'Barlow Condensed',sans-serif;font-size:.85rem;font-weight:700;
+  letter-spacing:.15em;text-transform:uppercase;color:var(--gold2);margin-bottom:.9rem;
+}
+.dir-exp-badge{
+  display:inline-flex;align-items:center;gap:.45rem;
+  background:rgba(200,136,10,.1);border:1px solid rgba(200,136,10,.25);
+  padding:.3rem .85rem;
+  font-family:'Barlow Condensed',sans-serif;font-size:.82rem;font-weight:700;
+  color:var(--gold2);letter-spacing:.08em;
+}
+/* Team right */
+.team-right{display:flex;flex-direction:column;gap:2rem}
+.team-right h3{
+  font-family:'Barlow Condensed',sans-serif;font-size:1.4rem;font-weight:700;
+  color:var(--white);margin-bottom:.6rem;
+}
+.team-right p{font-size:.97rem;color:var(--fog);line-height:1.8}
+.brand-chips{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:.6rem;margin-top:.5rem;
+}
+.b-chip{
+  padding:.65rem .5rem;text-align:center;
+  background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);
+  font-family:'Barlow Condensed',sans-serif;font-size:.88rem;font-weight:700;
+  color:var(--fog);letter-spacing:.06em;transition:all .2s;
+  border-radius:1px;
+}
+.b-chip:hover{border-color:var(--gold);color:var(--white);background:rgba(200,136,10,.08)}
+
+/* ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+   CONTACT
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ */
+#contact{background:var(--ink)}
+.contact-layout{
+  display:grid;grid-template-columns:1fr 1.5fr;gap:clamp(2.5rem,5vw,5rem);
+}
+.c-info{display:flex;flex-direction:column;gap:1.2rem}
+.c-block{
+  display:flex;align-items:flex-start;gap:1rem;
+  padding:1.1rem;
+  border:1px solid rgba(255,255,255,.06);border-radius:2px;
+  transition:border-color .2s;
+}
+.c-block:hover{border-color:var(--border)}
+.c-ico{
+  width:42px;height:42px;min-width:42px;border-radius:2px;
+  background:rgba(200,136,10,.1);border:1px solid rgba(200,136,10,.2);
+  display:flex;align-items:center;justify-content:center;font-size:1.1rem;
+}
+.c-label{
+  font-family:'Barlow Condensed',sans-serif;font-size:.72rem;font-weight:700;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);margin-bottom:.28rem;
+}
+.c-val{font-size:.95rem;color:var(--white);line-height:1.65}
+.c-val a{color:var(--gold2);transition:color .2s}
+.c-val a:hover{color:var(--gold3)}
+.abn-strip{
+  display:flex;align-items:center;gap:.8rem;
+  padding:.9rem 1.1rem;
+  background:rgba(200,136,10,.06);
+  border:1px solid rgba(200,136,10,.2);border-radius:2px;
+  margin-top:.3rem;
+}
+.abn-label{
+  font-family:'Barlow Condensed',sans-serif;font-size:.72rem;font-weight:700;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);
+}
+.abn-val{font-family:'Barlow Condensed',sans-serif;font-size:1.1rem;font-weight:700;color:var(--white);letter-spacing:.08em}
+/* Map placeholder ΓÇö pure CSS */
+.map-placeholder{
+  width:100%;height:160px;
+  background:linear-gradient(135deg,#0b1929,#0f2440);
+  border:1px solid var(--border);border-radius:2px;
+  position:relative;overflow:hidden;
+  display:flex;align-items:center;justify-content:center;
+}
+.map-grid{
+  position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(200,136,10,.1) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(200,136,10,.1) 1px,transparent 1px);
+  background-size:24px 24px;
+}
+.map-pin{
+  position:relative;z-index:2;text-align:center;
+}
+.map-pin-icon{
+  font-size:2.2rem;
+  filter:drop-shadow(0 0 12px rgba(200,136,10,.8));
+}
+.map-pin a{
+  display:block;margin-top:.4rem;
+  font-family:'Barlow Condensed',sans-serif;font-size:.85rem;font-weight:700;
+  letter-spacing:.1em;color:var(--gold2);
+}
+/* Form */
+.c-form-wrap{
+  background:rgba(15,36,64,.5);
+  border:1px solid var(--border);border-radius:2px;
+  padding:2.4rem;
+}
+.c-form-title{
+  font-family:'Barlow Condensed',sans-serif;font-size:1.5rem;font-weight:700;
+  color:var(--white);margin-bottom:1.5rem;letter-spacing:.04em;
+}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+.form-row.one{grid-template-columns:1fr}
+.field{display:flex;flex-direction:column;gap:.35rem}
+.field label{
+  font-family:'Barlow Condensed',sans-serif;font-size:.78rem;font-weight:700;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--fog);
+}
+.field input,.field select,.field textarea{
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.1);border-radius:2px;
+  padding:.72rem 1rem;color:var(--white);font-size:.95rem;
+  transition:border-color .2s,background .2s;
+  -webkit-appearance:none;
+}
+.field select option{background:#0f2440;color:var(--white)}
+.field textarea{min-height:110px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{
+  border-color:var(--gold);background:rgba(200,136,10,.06);
+}
+.field input::placeholder,.field textarea::placeholder{color:rgba(138,172,191,.4)}
+.f-submit{
+  width:100%;margin-top:1.2rem;
+  background:var(--gold);color:var(--ink);
+  font-family:'Barlow Condensed',sans-serif;font-size:1.05rem;font-weight:700;
+  letter-spacing:.12em;text-transform:uppercase;
+  padding:.95rem;border:none;border-radius:2px;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;gap:.5rem;
+  transition:background .2s,transform .15s,box-shadow .2s;
+}
+.f-submit:hover{background:var(--gold2);transform:translateY(-2px);box-shadow:0 8px 28px rgba(200,136,10,.35)}
+.f-ok{
+  display:none;text-align:center;padding:2.5rem;
+  font-family:'Barlow Condensed',sans-serif;font-size:1.1rem;font-weight:600;
+  color:var(--gold2);
+}
+
+/* ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+   FOOTER
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ */
+footer{
+  background:var(--deep);
+  border-top:1px solid var(--border);
+  padding:3rem clamp(1.4rem,5vw,4.5rem) 1.5rem;
+}
+.footer-wrap{max-width:1240px;margin:0 auto}
+.footer-top{
+  display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:3rem;
+  padding-bottom:2.5rem;
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
+.footer-brand p{font-size:.88rem;color:var(--fog);line-height:1.75;margin-top:1rem;max-width:300px}
+.footer-col h5{
+  font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:700;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--gold2);margin-bottom:1rem;
+}
+.footer-col ul{display:flex;flex-direction:column;gap:.55rem}
+.footer-col ul li a{font-size:.9rem;color:var(--fog);transition:color .2s}
+.footer-col ul li a:hover{color:var(--white)}
+.footer-bottom{
+  display:flex;align-items:center;justify-content:space-between;
+  padding-top:1.5rem;flex-wrap:wrap;gap:.5rem;
+  font-size:.8rem;color:var(--fog);
+}
+.footer-bottom a{color:var(--gold2)}
+.footer-abn{
+  font-family:'Barlow Condensed',sans-serif;font-size:.78rem;font-weight:600;
+  letter-spacing:.1em;color:rgba(138,172,191,.45);
+}
+
+/* ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+   FLOATING CTA
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ */
+.float-btn{
+  position:fixed;bottom:1.8rem;right:1.8rem;z-index:100;
+  background:var(--gold);color:var(--ink);
+  font-family:'Barlow Condensed',sans-serif;font-size:.9rem;font-weight:700;
+  letter-spacing:.1em;text-transform:uppercase;
+  padding:.7rem 1.6rem;border-radius:24px;
+  box-shadow:0 6px 28px rgba(200,136,10,.5);
+  border:none;cursor:pointer;
+  display:flex;align-items:center;gap:.5rem;
+  transition:all .2s;
+  animation:fadeUp .5s 1.8s ease both;
+  opacity:0;
+}
+.float-btn:hover{transform:translateY(-3px);box-shadow:0 12px 36px rgba(200,136,10,.55);background:var(--gold2)}
+
+/* ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+   SCROLL REVEAL
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ */
+.r{opacity:0;transform:translateY(26px);transition:.65s ease}
+.rl{opacity:0;transform:translateX(-26px);transition:.65s ease}
+.rr{opacity:0;transform:translateX(26px);transition:.65s ease}
+.r.v,.rl.v,.rr.v{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}
+.d4{transition-delay:.32s}.d5{transition-delay:.4s}.d6{transition-delay:.48s}
+
+/* ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+   RESPONSIVE
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ */
+@media(max-width:1100px){
+  .services-grid{grid-template-columns:repeat(2,1fr)}
+  .exp-layout,.team-layout{grid-template-columns:1fr}
+  .exp-detail{position:static}
+  .footer-top{grid-template-columns:1fr 1fr}
+  .team-layout{grid-template-columns:1fr}
+  .dir-card{max-width:360px}
+}
+@media(max-width:860px){
+  .about-grid,.contact-layout{grid-template-columns:1fr}
+  .ind-grid{grid-template-columns:repeat(2,1fr)}
+  .about-badge{right:0;bottom:-1.2rem}
+}
+@media(max-width:768px){
+  .nav-links,.nav-btn{display:none}
+  .burger{display:flex}
+  .hero-h1{font-size:clamp(2.6rem,14vw,5rem)}
+  .trust-inner{flex-direction:column}
+  .trust-item{border-right:none;border-bottom:1px solid var(--border2)}
+  .services-grid{grid-template-columns:1fr}
+  .ind-grid{grid-template-columns:1fr}
+  .brand-chips{grid-template-columns:repeat(2,1fr)}
+  .form-row{grid-template-columns:1fr}
+  .footer-top{grid-template-columns:1fr}
+  #team::after{font-size:10rem}
+}
+@media(max-width:480px){
+  .hero-stats{gap:1.5rem}
+  .hero-h1{font-size:clamp(2.2rem,15vw,3.5rem)}
+}
+</style>
 </head>
 <body>
-  <!-- Navigation -->
-  <header class="header" id="header">
-    <nav class="navbar">
-      <div class="logo">
-        <a href="#home">Inlec Solutions <span class="accent">Australia</span> Pty Ltd</a>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#capabilities">Capabilities</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#industries">Industries</a></li>
-        <li><a href="#why">Why Inlec</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact" class="btn-primary small">Contact</a></li>
-      </ul>
-      <button class="mobile-menu-btn" aria-label="Toggle menu">
-        <i data-lucide="menu"></i>
-      </button>
-    </nav>
-  </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content container">
-      <h1>Precision Engineering for Complex E&I Systems</h1>
-      <p>Delivering robust electrical, instrumentation, and control solutions tailored to Australia's most demanding industrial environments.</p>
-      <ul class="hero-bullets">
-        <li><i data-lucide="check-circle"></i> Comprehensive Turnkey Solutions</li>
-        <li><i data-lucide="check-circle"></i> Stringent Safety & Compliance</li>
-        <li><i data-lucide="check-circle"></i> Owner-Led Direct Service</li>
-      </ul>
-      <div class="hero-buttons">
-        <a href="#capabilities" class="btn-primary">View Capabilities</a>
-        <a href="#contact" class="btn-secondary">Contact Us</a>
+<!-- ΓòÉΓòÉ NAV ΓòÉΓòÉ -->
+<nav id="nav">
+  <a href="#" class="logo-wrap">
+    <!-- Logo mark: stylised "I" circuit-board -->
+    <svg class="logo-icon" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="1" width="40" height="40" rx="2" fill="none" stroke="rgba(200,136,10,.35)" stroke-width="1"/>
+      <line x1="21" y1="4" x2="21" y2="38" stroke="#c8880a" stroke-width="2"/>
+      <line x1="9" y1="13" x2="33" y2="13" stroke="#c8880a" stroke-width="1.5"/>
+      <line x1="9" y1="29" x2="33" y2="29" stroke="#c8880a" stroke-width="1.5"/>
+      <circle cx="21" cy="21" r="4.5" fill="none" stroke="#e8a820" stroke-width="1.5"/>
+      <circle cx="21" cy="21" r="2" fill="#c8880a"/>
+      <circle cx="9" cy="13" r="2.5" fill="none" stroke="#c8880a" stroke-width="1"/>
+      <circle cx="33" cy="13" r="2.5" fill="none" stroke="#c8880a" stroke-width="1"/>
+      <circle cx="9" cy="29" r="2.5" fill="none" stroke="#c8880a" stroke-width="1"/>
+      <circle cx="33" cy="29" r="2.5" fill="none" stroke="#c8880a" stroke-width="1"/>
+    </svg>
+    <div class="logo-text-block">
+      <span class="logo-main">Inlec Solutions</span>
+      <span class="logo-sub">Australia Pty Ltd</span>
+    </div>
+  </a>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#expertise">Expertise</a>
+    <a href="#industries">Industries</a>
+    <a href="#team">Team</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <a href="#contact" class="nav-btn">Request Service</a>
+  <div class="burger" id="burger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ΓòÉΓòÉ MOBILE MENU ΓòÉΓòÉ -->
+<div id="mob-menu">
+  <a href="#about"      onclick="closeMenu()">About</a>
+  <a href="#services"   onclick="closeMenu()">Services</a>
+  <a href="#expertise"  onclick="closeMenu()">Expertise</a>
+  <a href="#industries" onclick="closeMenu()">Industries</a>
+  <a href="#team"       onclick="closeMenu()">Team</a>
+  <a href="#contact"    onclick="closeMenu()">Contact</a>
+</div>
+
+<!-- ΓòÉΓòÉ HERO ΓòÉΓòÉ -->
+<section id="hero">
+  <div class="hero-sky"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-scan"></div>
+  <div class="hero-orb"></div>
+  <!-- Industrial silhouette SVG -->
+  <svg class="hero-silhouette" viewBox="0 0 820 500" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMaxYMax meet">
+    <!-- refinery towers -->
+    <rect x="60" y="120" width="30" height="380" fill="white"/>
+    <rect x="50" y="100" width="50" height="30" fill="white"/>
+    <rect x="55" y="85" width="40" height="20" fill="white" rx="2"/>
+    <rect x="130" y="200" width="22" height="300" fill="white"/>
+    <rect x="122" y="185" width="38" height="20" fill="white"/>
+    <rect x="200" y="150" width="28" height="350" fill="white"/>
+    <rect x="190" y="130" width="48" height="28" fill="white"/>
+    <rect x="195" y="108" width="38" height="25" fill="white" rx="2"/>
+    <!-- horizontal pipe connecting towers -->
+    <rect x="60" y="250" width="170" height="8" fill="white"/>
+    <rect x="60" y="320" width="170" height="8" fill="white"/>
+    <!-- Building blocks -->
+    <rect x="260" y="300" width="80" height="200" fill="white"/>
+    <rect x="360" y="260" width="60" height="240" fill="white"/>
+    <rect x="440" y="320" width="100" height="180" fill="white"/>
+    <rect x="560" y="240" width="50" height="260" fill="white"/>
+    <rect x="630" y="290" width="70" height="210" fill="white"/>
+    <rect x="720" y="350" width="100" height="150" fill="white"/>
+    <!-- small details -->
+    <rect x="270" y="280" width="10" height="20" fill="white"/>
+    <rect x="300" y="270" width="10" height="30" fill="white"/>
+    <rect x="370" y="240" width="8" height="20" fill="white"/>
+    <rect x="450" y="300" width="10" height="20" fill="white"/>
+    <!-- ground line -->
+    <rect x="0" y="498" width="820" height="2" fill="white"/>
+    <!-- windows -->
+    <rect x="270" y="320" width="14" height="10" fill="rgba(200,136,10,0.5)"/>
+    <rect x="295" y="320" width="14" height="10" fill="rgba(200,136,10,0.5)"/>
+    <rect x="270" y="345" width="14" height="10" fill="rgba(200,136,10,0.3)"/>
+    <rect x="295" y="345" width="14" height="10" fill="rgba(200,136,10,0.5)"/>
+    <rect x="370" y="285" width="12" height="9" fill="rgba(200,136,10,0.4)"/>
+    <rect x="390" y="285" width="12" height="9" fill="rgba(200,136,10,0.3)"/>
+  </svg>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">Queensland, Australia ┬╖ Analytical Engineering</div>
+    <h1 class="hero-h1">
+      Precision<br>
+      <span class="accent">Analytical</span><br>
+      Engineering
+    </h1>
+    <p class="hero-p">
+      Inlec Solutions Australia Pty Ltd delivers world-class analytical device engineering services to petrochemical, refinery, LNG, and power industries.
+    </p>
+    <div class="hero-ctas">
+      <a href="#contact" class="btn-fill">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        Request a Consultation
+      </a>
+      <a href="#services" class="btn-line">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        View Services
+      </a>
+    </div>
+    <div class="hero-abn">
+      <span>ABN&nbsp; 690 817 880</span>
+      <span style="opacity:.4">|</span>
+      <span>Springfield Lakes QLD 4300</span>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-n" data-target="60"><em>0+</em></span>
+        <span class="stat-l">Years Combined<br>Experience</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-n" data-target="5"><em>0+</em></span>
+        <span class="stat-l">Years in<br>Operation</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-n" data-target="7"><em>0+</em></span>
+        <span class="stat-l">Analyzer<br>Specialisations</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-n" data-target="6"><em>0+</em></span>
+        <span class="stat-l">Industries<br>Served</span>
       </div>
     </div>
-  </section>
+  </div>
+  <div class="scroll-cue">
+    <div class="scroll-wire"></div>
+    <span>Scroll</span>
+  </div>
+</section>
 
-  <!-- Capabilities Section -->
-  <section id="capabilities" class="section">
-    <div class="container">
-      <div class="section-header">
-        <h2>Our Capabilities</h2>
-        <p>From conceptual design through to commissioning and ongoing maintenance, Inlec offers end-to-end expertise for industrial projects.</p>
-      </div>
-      <div class="grid grid-4">
-        <div class="card">
-          <div class="card-icon"><i data-lucide="pen-tool"></i></div>
-          <h3>Engineering & Design</h3>
-          <p>Comprehensive E&I design packages tailored to your requirements, ensuring optimal system performance.</p>
-          <ul class="card-list">
-            <li>System Architecture</li>
-            <li>Detailed Drafting</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="card-icon"><i data-lucide="zap"></i></div>
-          <h3>Installation & Commissioning</h3>
-          <p>Expert site execution with a firm commitment to safety and timeline delivery.</p>
-          <ul class="card-list">
-            <li>Equipment Installation</li>
-            <li>Pre-commissioning Tests</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="card-icon"><i data-lucide="shield-check"></i></div>
-          <h3>Testing & Maintenance</h3>
-          <p>Rigorous verification procedures to keep your infrastructure compliant and operational.</p>
-          <ul class="card-list">
-            <li>Statutory Inspections</li>
-            <li>Preventative Maintenance</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="card-icon"><i data-lucide="cpu"></i></div>
-          <h3>Control & Automation</h3>
-          <p>Advanced integration of PLCs, SCADA, and DCS systems for modern industrial operations.</p>
-          <ul class="card-list">
-            <li>PLC Programming</li>
-            <li>SCADA Integration</li>
-          </ul>
-        </div>
+<!-- ΓòÉΓòÉ TRUST BAR ΓòÉΓòÉ -->
+<div id="trust">
+  <div class="trust-inner">
+    <div class="trust-item r d1">
+      <div class="trust-icon">≡ƒÅ¢∩╕Å</div>
+      <div>
+        <h4>Registered in Australia</h4>
+        <p>ABN 690 817 880 ┬╖ Queensland</p>
       </div>
     </div>
-  </section>
-
-  <!-- Products & Solutions -->
-  <section id="products" class="section bg-light">
-    <div class="container">
-      <div class="section-header">
-        <h2>Products & Solutions</h2>
-        <p>We source, supply, and integrate high-quality equipment fit for harsh Australian environments.</p>
-      </div>
-      <div class="grid grid-4">
-        <div class="card-simple">
-          <i data-lucide="activity"></i>
-          <h4>Process Instrumentation</h4>
-          <p>Precision measurement devices for flow, pressure, temperature, and level.</p>
-        </div>
-        <div class="card-simple">
-          <i data-lucide="server"></i>
-          <h4>Electrical Distribution</h4>
-          <p>Custom switchboards, motor control centers, and power distribution units.</p>
-        </div>
-        <div class="card-simple">
-          <i data-lucide="settings"></i>
-          <h4>Control & Automation</h4>
-          <p>Industrial networking hardware, PLCs, RTUs, and telemetry solutions.</p>
-        </div>
-        <div class="card-simple">
-          <i data-lucide="eye"></i>
-          <h4>Safety & Monitoring</h4>
-          <p>Gas detection, safety relays, and continuous emissions monitoring systems.</p>
-        </div>
+    <div class="trust-item r d2">
+      <div class="trust-icon">≡ƒö¼</div>
+      <div>
+        <h4>Multi-Brand Expertise</h4>
+        <p>ABB, Siemens, Yokogawa, SICK & more</p>
       </div>
     </div>
-  </section>
-
-  <!-- Industries Section -->
-  <section id="industries" class="section">
-    <div class="container">
-      <div class="section-header">
-        <h2>Industries & Applications</h2>
-        <p>Delivering critical electrical and instrumentation services across diverse sectors.</p>
-      </div>
-      <div class="pill-grid">
-        <div class="pill-card">
-          <i data-lucide="factory"></i>
-          <div>
-            <h4>Manufacturing Facilities</h4>
-            <p>Process automation and facility upgrades.</p>
-          </div>
-        </div>
-        <div class="pill-card">
-          <i data-lucide="train"></i>
-          <div>
-            <h4>Utilities & Infrastructure</h4>
-            <p>Water treatment, transport, and public works.</p>
-          </div>
-        </div>
-        <div class="pill-card">
-          <i data-lucide="pickaxe"></i>
-          <div>
-            <h4>Resources & Mining</h4>
-            <p>Heavy duty E&I corresponding to strict mining standards.</p>
-          </div>
-        </div>
-        <div class="pill-card">
-          <i data-lucide="flame"></i>
-          <div>
-            <h4>Oil, Gas & Energy</h4>
-            <p>Hazardous area installations and power generation.</p>
-          </div>
-        </div>
-        <div class="pill-card">
-          <i data-lucide="droplet"></i>
-          <div>
-            <h4>Water & Wastewater</h4>
-            <p>Pump stations and treatment plant automation.</p>
-          </div>
-        </div>
+    <div class="trust-item r d3">
+      <div class="trust-icon">ΓÜÖ∩╕Å</div>
+      <div>
+        <h4>Full-Lifecycle Services</h4>
+        <p>Design ┬╖ FAT ┬╖ SAT ┬╖ Calibration ┬╖ Repair</p>
       </div>
     </div>
-  </section>
-
-  <!-- Why Choose Inlec -->
-  <section id="why" class="section bg-dark text-white">
-    <div class="container">
-      <div class="section-header text-white">
-        <h2>Why Choose Inlec</h2>
-        <p>A proven track record of resolving complex technical challenges with pragmatism and expertise.</p>
-      </div>
-      <div class="grid grid-2">
-        <div class="feature-block">
-          <div class="feature-icon"><i data-lucide="map-pin"></i></div>
-          <div class="feature-text">
-            <h4>Local Presence in Queensland</h4>
-            <p>Headquartered in Springfield Lakes, delivering agile, rapid-response services to regional and remote clients.</p>
-          </div>
-        </div>
-        <div class="feature-block">
-          <div class="feature-icon"><i data-lucide="hard-hat"></i></div>
-          <div class="feature-text">
-            <h4>Focus on Safety & Compliance</h4>
-            <p>Uncompromising dedication to zero-harm environments and strict adherence to Australian Standards (AS/NZS).</p>
-          </div>
-        </div>
-        <div class="feature-block">
-          <div class="feature-icon"><i data-lucide="briefcase"></i></div>
-          <div class="feature-text">
-            <h4>Experience with Complex E&I</h4>
-            <p>Extensive background navigating technically demanding, high-stakes industrial projects and deployments.</p>
-          </div>
-        </div>
-        <div class="feature-block">
-          <div class="feature-icon"><i data-lucide="users"></i></div>
-          <div class="feature-text">
-            <h4>Owner-Led, Responsive Service</h4>
-            <p>Direct communication and accountability straight from the top, ensuring your project's success is prioritized.</p>
-          </div>
-        </div>
+    <div class="trust-item r d4">
+      <div class="trust-icon">≡ƒîÅ</div>
+      <div>
+        <h4>Industry-Wide Coverage</h4>
+        <p>Petrochemical, Refinery, LNG, Power & more</p>
       </div>
     </div>
-  </section>
+  </div>
+</div>
 
-  <!-- About Section -->
-  <section id="about" class="section">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-text">
-          <h2>About Inlec Solutions Australia Pty Ltd</h2>
-          <div class="accent-line"></div>
-          <p>Inlec Solutions Australia is a forward-thinking electrical and instrumentation specialist. Operating out of Springfield Lakes, Queensland, we focus purely on the industrial sectors—bridging the gap between complex engineering requirements and practical, actionable on-site solutions.</p>
-          <p>Our philosophy is rooted in technical excellence and strong client partnerships. By minimizing overheads and maximizing direct engineering involvement, we offer a nimble, highly capable resource to asset owners, operators, and tier-one contractors across Australia.</p>
-        </div>
-        <div class="profile-card">
-          <div class="profile-header">
-            <div class="profile-avatar"><i data-lucide="user"></i></div>
-            <div>
-              <h3>Devakumar Jayakumar</h3>
-              <span class="role">Director / Principal Engineer</span>
-            </div>
-          </div>
-          <div class="profile-body">
-            <p>Leading the technical and operational delivery at Inlec, Devakumar brings a wealth of specialized E&I experience to every engagement.</p>
-            <ul class="profile-list">
-              <li><i data-lucide="check"></i> Deep expertise in hazardous area installations</li>
-              <li><i data-lucide="check"></i> Proven strategy for minimal-downtime commissioning</li>
-              <li><i data-lucide="check"></i> Commitment to client-focused problem solving</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="section bg-light">
-    <div class="container">
-      <div class="contact-grid">
-        <div class="contact-info">
-          <h2>Get In Touch</h2>
-          <p>Whether you require a comprehensive design package or immediate on-site support, reach out to discuss how Inlec Solutions can add value to your next project.</p>
-          
-          <div class="contact-details">
-            <div class="contact-item">
-              <i data-lucide="building"></i>
-              <div>
-                <strong>Business Details</strong>
-                <span>Inlec Solutions Australia Pty Ltd<br>ABN: 690 817 880</span>
+<!-- ΓòÉΓòÉ ABOUT ΓòÉΓòÉ -->
+<section id="about" class="section">
+  <div class="wrap">
+    <div class="about-grid">
+      <!-- CSS Analyzer Illustration -->
+      <div class="rl">
+        <div class="about-visual">
+          <div class="analyzer-art">
+            <div class="az-grid"></div>
+            <div class="az-glow1"></div>
+            <div class="az-glow2"></div>
+            <div class="az-body">
+              <div class="az-screen">
+                <div class="az-wave">
+                  <svg viewBox="0 0 200 60" preserveAspectRatio="none">
+                    <polyline points="0,45 20,30 40,48 60,20 80,38 100,15 120,35 140,25 160,42 180,18 200,35" fill="none" stroke="rgba(200,136,10,0.7)" stroke-width="1.8"/>
+                    <polyline points="0,55 20,44 40,58 60,38 80,52 100,32 120,50 140,40 160,54 180,35 200,48" fill="none" stroke="rgba(26,127,168,0.5)" stroke-width="1"/>
+                  </svg>
+                </div>
+                <div style="position:absolute;top:.4rem;left:.5rem;font-family:'Barlow Condensed',monospace;font-size:.55rem;color:rgba(200,136,10,.7);letter-spacing:.05em">
+                  STATUS: MEASURING<br>OΓéé: 20.48% &nbsp; T: 21.3┬░C<br>P: 101.3 kPa
+                </div>
               </div>
-            </div>
-            <div class="contact-item">
-              <i data-lucide="map-pin"></i>
-              <div>
-                <strong>Address</strong>
-                <span>28 Carnarvon Avenue<br>Springfield Lakes, QLD 4300, Australia</span>
+              <div class="az-btn-row">
+                <div class="az-btn"></div>
+                <div class="az-btn"></div>
+                <div class="az-btn"></div>
+                <div class="az-btn"></div>
+                <div class="az-btn"></div>
               </div>
-            </div>
-            <div class="contact-item">
-              <i data-lucide="user"></i>
-              <div>
-                <strong>Contact Person</strong>
-                <span>Devakumar Jayakumar</span>
-              </div>
-            </div>
-            <div class="contact-item">
-              <i data-lucide="phone"></i>
-              <div>
-                <strong>Phone</strong>
-                <span><a href="tel:+61000000000">+61 (0) 000 000 000</a></span>
-              </div>
-            </div>
-            <div class="contact-item">
-              <i data-lucide="mail"></i>
-              <div>
-                <strong>Email</strong>
-                <span><a href="mailto:info@inlecsolutions.com.au">info@inlecsolutions.com.au</a></span>
+              <div class="az-knob"></div>
+              <div class="az-ports">
+                <div class="az-port"></div>
+                <div class="az-port"></div>
+                <div class="az-port"></div>
               </div>
             </div>
           </div>
+          <div class="about-badge">
+            REGISTERED<br>IN<br>AUSTRALIA
+          </div>
         </div>
-        
-        <div class="contact-form-container">
-          <form id="contactForm" class="form">
-            <div class="form-group">
-              <label for="name">Name *</label>
-              <input type="text" id="name" name="name" required placeholder="John Doe">
+      </div>
+
+      <!-- Copy -->
+      <div class="rr about-copy">
+        <div class="eyebrow">About Inlec Solutions</div>
+        <span class="rule"></span>
+        <h2>Built on Precision.<br>Trusted by Industry.</h2>
+        <p style="margin-top:1rem">
+          Inlec Solutions Australia Pty Ltd is an Analytical Devices Engineering Services company based in Springfield Lakes, Queensland. Over more than five years of operation, our team ΓÇö led by Director Devakumar Jayakumar ΓÇö has delivered precision commissioning, calibration, and field services to critical industrial facilities.
+        </p>
+        <p>
+          With a combined industry experience of over 60 years, we bring deep technical knowledge across all major analyzer platforms to every engagement. Our core strengths set us apart from generalist providers.
+        </p>
+        <div class="strength-list">
+          <div class="s-item">
+            <div class="s-ico">ΓÜÖ∩╕Å</div>
+            <div class="s-text">
+              <h4>Commissioning & Field Services</h4>
+              <p>Full-cycle commissioning from FAT through SAT, with on-site field support for complex analytical systems in live plant environments.</p>
             </div>
-            <div class="form-group">
-              <label for="company">Company</label>
-              <input type="text" id="company" name="company" placeholder="Your Company">
+          </div>
+          <div class="s-item">
+            <div class="s-ico">≡ƒÄ»</div>
+            <div class="s-text">
+              <h4>Precision Calibration</h4>
+              <p>Traceable calibration services for all major analyzer types, ensuring regulatory compliance and measurement accuracy.</p>
             </div>
-            <div class="form-group">
-              <label for="email">Email *</label>
-              <input type="email" id="email" name="email" required placeholder="john@example.com">
+          </div>
+          <div class="s-item">
+            <div class="s-ico">≡ƒöº</div>
+            <div class="s-text">
+              <h4>Sample System Troubleshooting</h4>
+              <p>Expert diagnostics and engineered modification of sample conditioning systems to maximise analyzer uptime and reliability.</p>
             </div>
-            <div class="form-group">
-              <label for="phone">Phone</label>
-              <input type="tel" id="phone" name="phone" placeholder="Contact Number">
+          </div>
+          <div class="s-item">
+            <div class="s-ico">≡ƒôÉ</div>
+            <div class="s-text">
+              <h4>Design, Consultancy & Engineering</h4>
+              <p>End-to-end engineering consultancy from system design and specification through to operational handover and documentation.</p>
             </div>
-            <div class="form-group full-width">
-              <label for="message">Message *</label>
-              <textarea id="message" name="message" rows="4" required placeholder="How can we help?"></textarea>
-            </div>
-            <div class="form-group full-width">
-              <button type="submit" class="btn-primary w-100">Send Message</button>
-            </div>
-            <div id="formStatus" class="form-status hidden"></div>
-          </form>
+          </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-content">
-      <div class="footer-logo">
-        <h3>Inlec Solutions Australia</h3>
-        <p>Precision Engineering for Complex E&I Systems</p>
+<!-- ΓòÉΓòÉ SERVICES ΓòÉΓòÉ -->
+<section id="services" class="section">
+  <div class="wrap">
+    <div class="services-header r">
+      <div>
+        <div class="eyebrow">What We Do</div>
+        <span class="rule"></span>
+        <h2>Our Services</h2>
       </div>
-      <div class="footer-links">
-        <a href="#home">Home</a>
-        <a href="#capabilities">Capabilities</a>
-        <a href="#products">Products</a>
-        <a href="#industries">Industries</a>
-        <a href="#why">Why Inlec</a>
-        <a href="#about">About</a>
+      <p style="max-width:420px;color:var(--fog);line-height:1.7;font-size:.97rem;align-self:flex-end">
+        From initial design consultancy to on-site commissioning and ongoing maintenance ΓÇö the complete analytical engineering spectrum.
+      </p>
+    </div>
+    <div class="services-grid r">
+      <div class="svc-card">
+        <span class="svc-n">01</span>
+        <div class="svc-ico">≡ƒÅù∩╕Å</div>
+        <div class="svc-title">Design, Consultancy & Engineering</div>
+        <p class="svc-desc">Comprehensive engineering consultancy for new analyzer installations, upgrades, and sample system design ΓÇö from concept through to detailed engineering packages.</p>
+        <span class="svc-more">Enquire ΓåÆ</span>
       </div>
-      <div class="footer-copy">
-        &copy; 2024 Inlec Solutions Australia Pty Ltd. All rights reserved.
+      <div class="svc-card">
+        <span class="svc-n">02</span>
+        <div class="svc-ico">≡ƒöî</div>
+        <div class="svc-title">Commissioning</div>
+        <p class="svc-desc">Expert commissioning of analytical instrumentation at petrochemical, refinery, LNG, and power facilities. Full documentation and handover support included.</p>
+        <span class="svc-more">Enquire ΓåÆ</span>
+      </div>
+      <div class="svc-card">
+        <span class="svc-n">03</span>
+        <div class="svc-ico">≡ƒÅ¡</div>
+        <div class="svc-title">Factory Acceptance Testing</div>
+        <p class="svc-desc">Independent FAT services that verify analyzer systems meet specification before shipment ΓÇö reducing risk and avoiding costly site rework.</p>
+        <span class="svc-more">Enquire ΓåÆ</span>
+      </div>
+      <div class="svc-card">
+        <span class="svc-n">04</span>
+        <div class="svc-ico">Γ£à</div>
+        <div class="svc-title">Site Acceptance Testing</div>
+        <p class="svc-desc">Thorough SAT procedures confirming installed systems perform within design parameters and are ready for operational handover.</p>
+        <span class="svc-more">Enquire ΓåÆ</span>
+      </div>
+      <div class="svc-card">
+        <span class="svc-n">05</span>
+        <div class="svc-ico">≡ƒÄ»</div>
+        <div class="svc-title">Calibration Services</div>
+        <p class="svc-desc">Traceable, standards-compliant calibration for gas chromatographs, in-situ analyzers, CEMS, and water quality instruments ΓÇö on-site or at your facility.</p>
+        <span class="svc-more">Enquire ΓåÆ</span>
+      </div>
+      <div class="svc-card">
+        <span class="svc-n">06</span>
+        <div class="svc-ico">≡ƒö¼</div>
+        <div class="svc-title">SCS Troubleshooting & Modification</div>
+        <p class="svc-desc">Diagnostic assessment and engineered modification of sample conditioning systems to improve reliability, reduce maintenance burden, and extend analyzer life.</p>
+        <span class="svc-more">Enquire ΓåÆ</span>
+      </div>
+      <div class="svc-card">
+        <span class="svc-n">07</span>
+        <div class="svc-ico">≡ƒ¢á∩╕Å</div>
+        <div class="svc-title">Repair & Rectification</div>
+        <p class="svc-desc">Skilled repair and rectification services for analyzers and associated equipment across all major OEM brands, minimising process downtime.</p>
+        <span class="svc-more">Enquire ΓåÆ</span>
+      </div>
+      <div class="svc-card svc-cta-card">
+        <div class="svc-ico" style="background:rgba(200,136,10,.2)">≡ƒô₧</div>
+        <div class="svc-title" style="color:var(--gold2)">Need a Custom Solution?</div>
+        <p class="svc-desc" style="color:var(--fog)">Our engineers are available to assess your specific requirements. Contact us to discuss a tailored scope of work.</p>
+        <a href="#contact" class="btn-fill" style="margin-top:1.2rem;font-size:.88rem;padding:.65rem 1.4rem">Get in Touch ΓåÆ</a>
       </div>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <script src="script.js"></script>
+<!-- ΓòÉΓòÉ EXPERTISE ΓòÉΓòÉ -->
+<section id="expertise" class="section">
+  <div class="wrap">
+    <div class="sec-head r">
+      <div class="eyebrow">Technical Depth</div>
+      <span class="rule"></span>
+      <h2 style="font-size:clamp(2rem,4.5vw,3.4rem);color:var(--white)">Analyzer Expertise</h2>
+      <p style="max-width:580px;color:var(--fog);line-height:1.7;margin-top:.5rem">
+        Proficient across every major analyzer category, working with all principal technology types and OEM platforms deployed in process industries.
+      </p>
+    </div>
+    <div class="exp-layout">
+      <!-- Tabs -->
+      <div class="exp-tabs rl">
+        <div class="exp-tab on" onclick="showExp(0,this)"><div class="exp-dot"></div><span class="exp-tab-name">Gas Chromatographs</span></div>
+        <div class="exp-tab"   onclick="showExp(1,this)"><div class="exp-dot"></div><span class="exp-tab-name">In-Situ Gas Analyzers</span></div>
+        <div class="exp-tab"   onclick="showExp(2,this)"><div class="exp-dot"></div><span class="exp-tab-name">Extractive Gas Analyzers</span></div>
+        <div class="exp-tab"   onclick="showExp(3,this)"><div class="exp-dot"></div><span class="exp-tab-name">Water Quality Analyzers</span></div>
+        <div class="exp-tab"   onclick="showExp(4,this)"><div class="exp-dot"></div><span class="exp-tab-name">Petroleum Physical Property</span></div>
+        <div class="exp-tab"   onclick="showExp(5,this)"><div class="exp-dot"></div><span class="exp-tab-name">CEMS</span></div>
+        <div class="exp-tab"   onclick="showExp(6,this)"><div class="exp-dot"></div><span class="exp-tab-name">Plant Instrumentation</span></div>
+      </div>
+      <!-- Detail panes -->
+      <div class="exp-detail rr">
+        <!-- 0: GC -->
+        <div class="exp-pane on" id="ep0">
+          <div class="exp-visual viz-gc">
+            <div class="viz-circuit"></div>
+            <div class="viz-bars">
+              <div class="viz-bar" style="--h:55%"></div><div class="viz-bar" style="--h:75%"></div>
+              <div class="viz-bar" style="--h:42%"></div><div class="viz-bar" style="--h:88%"></div>
+              <div class="viz-bar" style="--h:60%"></div><div class="viz-bar" style="--h:35%"></div>
+              <div class="viz-bar" style="--h:78%"></div><div class="viz-bar" style="--h:50%"></div>
+              <div class="viz-bar" style="--h:92%"></div><div class="viz-bar" style="--h:45%"></div>
+              <div class="viz-bar" style="--h:66%"></div><div class="viz-bar" style="--h:80%"></div>
+            </div>
+            <div class="viz-icon">≡ƒº¬</div>
+            <div class="viz-readout"><span class="viz-dot"></span>GC ACTIVE ┬╖ CH4: 94.2%</div>
+          </div>
+          <div class="exp-pane-title">Gas Chromatographs</div>
+          <p class="exp-pane-desc">Process gas chromatographs are mission-critical for feedstock measurement, product quality control, and custody transfer. Inlec Solutions engineers are fully trained across all major GC platforms and can deliver commissioning, calibration, maintenance, and troubleshooting services.</p>
+          <div class="exp-tags">
+            <span class="pill">ABB</span><span class="pill">Siemens</span>
+            <span class="pill">Yokogawa</span><span class="pill">Emerson</span><span class="pill">Daniel</span>
+          </div>
+        </div>
+        <!-- 1: In-situ -->
+        <div class="exp-pane" id="ep1">
+          <div class="exp-visual viz-insitu">
+            <div class="viz-circuit"></div>
+            <svg style="position:absolute;inset:0;width:100%;height:100%" viewBox="0 0 400 200" preserveAspectRatio="none">
+              <path d="M0,100 Q50,60 100,100 Q150,140 200,100 Q250,60 300,100 Q350,140 400,100" fill="none" stroke="rgba(200,136,10,.55)" stroke-width="2"/>
+              <path d="M0,120 Q50,80 100,120 Q150,160 200,120 Q250,80 300,120 Q350,160 400,120" fill="none" stroke="rgba(26,127,168,.35)" stroke-width="1.5"/>
+            </svg>
+            <div class="viz-icon">≡ƒîí∩╕Å</div>
+            <div class="viz-readout"><span class="viz-dot"></span>OΓéé: 20.48% ┬╖ TDL MODE</div>
+          </div>
+          <div class="exp-pane-title">In-Situ Gas Analyzers</div>
+          <p class="exp-pane-desc">In-situ analyzers measure directly within the process stream or stack, eliminating sample conditioning complexity. Inlec Solutions provides full-lifecycle support including installation, commissioning, and optical alignment for zirconia, TDL, and other in-situ instruments.</p>
+          <div class="exp-tags">
+            <span class="pill">Zirconia</span><span class="pill">Tuned Diode Laser</span>
+            <span class="pill">IR</span><span class="pill">UV</span><span class="pill">Opacity</span>
+          </div>
+        </div>
+        <!-- 2: Extractive -->
+        <div class="exp-pane" id="ep2">
+          <div class="exp-visual viz-extract">
+            <div class="viz-circuit"></div>
+            <div class="viz-icon">≡ƒÆ¿</div>
+            <svg style="position:absolute;bottom:0;left:0;right:0;width:100%;height:50%" viewBox="0 0 400 100" preserveAspectRatio="none">
+              <rect x="20" y="20" width="60" height="70" fill="rgba(200,136,10,.2)" stroke="rgba(200,136,10,.4)" stroke-width="1"/>
+              <rect x="100" y="35" width="200" height="8" fill="rgba(200,136,10,.3)"/>
+              <rect x="310" y="20" width="60" height="70" fill="rgba(200,136,10,.15)" stroke="rgba(200,136,10,.3)" stroke-width="1"/>
+              <circle cx="50" cy="55" r="18" fill="none" stroke="rgba(26,127,168,.6)" stroke-width="1.5"/>
+              <circle cx="50" cy="55" r="10" fill="rgba(26,127,168,.2)"/>
+            </svg>
+            <div class="viz-readout"><span class="viz-dot"></span>IR CELL ┬╖ COΓéé: 3.2%</div>
+          </div>
+          <div class="exp-pane-title">Extractive Gas Analyzers</div>
+          <p class="exp-pane-desc">Extractive systems draw a representative sample from the process for conditioning and measurement. Inlec Solutions handles the full scope ΓÇö from sample probe selection to sample conditioning system design, analyzer commissioning, and ongoing calibration.</p>
+          <div class="exp-tags">
+            <span class="pill">IR</span><span class="pill">UV</span>
+            <span class="pill">Paramagnetic</span><span class="pill">Electrochemical</span>
+          </div>
+        </div>
+        <!-- 3: Water -->
+        <div class="exp-pane" id="ep3">
+          <div class="exp-visual viz-water">
+            <div class="viz-circuit"></div>
+            <div class="viz-icon">≡ƒÆº</div>
+            <svg style="position:absolute;bottom:0;left:0;right:0;width:100%;height:40%" viewBox="0 0 400 80" preserveAspectRatio="none">
+              <path d="M0,40 Q100,0 200,40 Q300,80 400,40 L400,80 L0,80 Z" fill="rgba(26,127,168,.25)"/>
+              <path d="M0,55 Q100,20 200,55 Q300,90 400,55 L400,80 L0,80 Z" fill="rgba(26,127,168,.15)"/>
+            </svg>
+            <div class="viz-readout"><span class="viz-dot"></span>pH: 7.2 ┬╖ DO: 8.4 mg/L</div>
+          </div>
+          <div class="exp-pane-title">Water Quality Analyzers</div>
+          <p class="exp-pane-desc">Water quality monitoring is essential in power generation, cooling water systems, and effluent management. Inlec Solutions provides commissioning and maintenance across the full range of electrochemical and optical water quality instruments.</p>
+          <div class="exp-tags">
+            <span class="pill">pH</span><span class="pill">Conductivity</span>
+            <span class="pill">Dissolved Oxygen</span><span class="pill">Silica</span>
+            <span class="pill">Sodium</span><span class="pill">Oil-in-Water</span>
+          </div>
+        </div>
+        <!-- 4: Petroleum -->
+        <div class="exp-pane" id="ep4">
+          <div class="exp-visual viz-petro">
+            <div class="viz-circuit"></div>
+            <div class="viz-icon">≡ƒ¢ó∩╕Å</div>
+            <svg style="position:absolute;inset:0;width:100%;height:100%" viewBox="0 0 400 200" preserveAspectRatio="none">
+              <line x1="50" y1="180" x2="350" y2="180" stroke="rgba(200,136,10,.3)" stroke-width="1"/>
+              <polyline points="50,160 100,120 150,145 200,80 250,110 300,65 350,90" fill="none" stroke="rgba(200,136,10,.6)" stroke-width="2"/>
+              <circle cx="200" cy="80" r="4" fill="#c8880a"/>
+              <circle cx="300" cy="65" r="4" fill="#c8880a"/>
+            </svg>
+            <div class="viz-readout"><span class="viz-dot"></span>RVP: 68.4 kPa ┬╖ LIVE</div>
+          </div>
+          <div class="exp-pane-title">Petroleum Physical Property Analyzers</div>
+          <p class="exp-pane-desc">Physical property analyzers deliver real-time product quality data for blend optimisation and specification compliance. Our engineers have deep expertise in commissioning and maintaining these specialised instruments in refinery environments.</p>
+          <div class="exp-tags">
+            <span class="pill">Boiling Point</span><span class="pill">Flash Point</span>
+            <span class="pill">Freeze Point</span><span class="pill">RVP</span>
+          </div>
+        </div>
+        <!-- 5: CEMS -->
+        <div class="exp-pane" id="ep5">
+          <div class="exp-visual viz-cems">
+            <div class="viz-circuit"></div>
+            <div class="viz-icon">≡ƒÅ¡</div>
+            <svg style="position:absolute;inset:0;width:100%;height:100%" viewBox="0 0 400 200" preserveAspectRatio="none">
+              <rect x="160" y="50" width="80" height="150" fill="rgba(255,255,255,.06)" stroke="rgba(255,255,255,.12)" stroke-width="1"/>
+              <ellipse cx="200" cy="50" rx="40" ry="15" fill="rgba(255,255,255,.08)"/>
+              <path d="M185,30 Q190,10 195,20 Q200,0 205,15 Q210,5 215,25" fill="none" stroke="rgba(255,255,255,.25)" stroke-width="2"/>
+              <line x1="200" y1="100" x2="280" y2="100" stroke="rgba(200,136,10,.5)" stroke-width="1.5" stroke-dasharray="4 4"/>
+              <rect x="280" y="82" width="70" height="36" rx="2" fill="rgba(200,136,10,.1)" stroke="rgba(200,136,10,.4)" stroke-width="1"/>
+              <text x="290" y="98" font-family="monospace" font-size="8" fill="rgba(200,136,10,.8)">NOx:45</text>
+              <text x="290" y="110" font-family="monospace" font-size="8" fill="rgba(200,136,10,.8)">SO2:12</text>
+            </svg>
+            <div class="viz-readout"><span class="viz-dot"></span>CEMS ┬╖ NOΓéô: 45 mg/Nm┬│</div>
+          </div>
+          <div class="exp-pane-title">Continuous Emission Monitoring Systems</div>
+          <p class="exp-pane-desc">CEMS are mandatory for environmental regulatory compliance at combustion sources. Inlec Solutions delivers CEMS commissioning, calibration using certified gas standards, QA/QC procedures, and ongoing maintenance contracts for Australian and international facilities.</p>
+          <div class="exp-tags">
+            <span class="pill">SICK</span><span class="pill">SOΓéé/NOΓéô</span>
+            <span class="pill">CO/COΓéé</span><span class="pill">Opacity</span><span class="pill">Flow</span>
+          </div>
+        </div>
+        <!-- 6: Plant Instrumentation -->
+        <div class="exp-pane" id="ep6">
+          <div class="exp-visual viz-plant">
+            <div class="viz-circuit"></div>
+            <div class="viz-icon">≡ƒöº</div>
+            <svg style="position:absolute;inset:0;width:100%;height:100%" viewBox="0 0 400 200" preserveAspectRatio="none">
+              <circle cx="100" cy="100" r="40" fill="none" stroke="rgba(200,136,10,.4)" stroke-width="1.5"/>
+              <circle cx="100" cy="100" r="25" fill="rgba(200,136,10,.08)"/>
+              <line x1="100" y1="60" x2="100" y2="140" stroke="rgba(200,136,10,.3)" stroke-width="1"/>
+              <line x1="60" y1="100" x2="140" y2="100" stroke="rgba(200,136,10,.3)" stroke-width="1"/>
+              <line x1="100" y1="75" x2="120" y2="100" stroke="rgba(200,136,10,.7)" stroke-width="2"/>
+              <rect x="200" y="60" width="150" height="80" rx="2" fill="rgba(26,127,168,.1)" stroke="rgba(26,127,168,.4)" stroke-width="1"/>
+              <text x="220" y="90" font-family="monospace" font-size="9" fill="rgba(26,127,168,.9)">FLOW: 248.3</text>
+              <text x="220" y="105" font-family="monospace" font-size="9" fill="rgba(26,127,168,.9)">UNIT: m┬│/h</text>
+              <text x="220" y="120" font-family="monospace" font-size="9" fill="rgba(26,127,168,.7)">STATUS: OK</text>
+            </svg>
+            <div class="viz-readout"><span class="viz-dot"></span>FLOW: 248.3 m┬│/h</div>
+          </div>
+          <div class="exp-pane-title">Plant & Process Instrumentation</div>
+          <p class="exp-pane-desc">Beyond analyzers, Inlec Solutions supports broader plant instrumentation including flow, pressure, temperature, and level measurement devices ΓÇö providing installation, loop checking, and calibration across all major process instruments.</p>
+          <div class="exp-tags">
+            <span class="pill">Flow</span><span class="pill">Pressure</span>
+            <span class="pill">Temperature</span><span class="pill">Level</span><span class="pill">Control Valves</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ΓòÉΓòÉ INDUSTRIES ΓòÉΓòÉ -->
+<section id="industries" class="section">
+  <div class="wrap">
+    <div class="sec-head r" style="text-align:center">
+      <div class="eyebrow" style="justify-content:center">Markets We Serve</div>
+      <span class="rule" style="margin:0 auto .8rem"></span>
+      <h2 style="font-size:clamp(2rem,4.5vw,3.4rem);color:var(--white)">Industry Expertise</h2>
+      <p style="max-width:520px;margin:.5rem auto 0;color:var(--fog);line-height:1.7">
+        Our engineers have completed projects across a diverse range of critical industrial sectors in Australia and Southeast Asia.
+      </p>
+    </div>
+    <div class="ind-grid r">
+      <!-- Petrochemical -->
+      <div class="ind-card ind-petrochem">
+        <div class="ind-art">
+          <!-- Towers in CSS -->
+          <svg style="position:absolute;bottom:0;left:0;right:0;width:100%;height:80%" viewBox="0 0 400 200" preserveAspectRatio="xMidYMax meet">
+            <rect x="30" y="20" width="28" height="180" fill="rgba(255,255,255,.15)"/>
+            <rect x="22" y="10" width="44" height="18" fill="rgba(255,255,255,.12)"/>
+            <rect x="80" y="60" width="20" height="140" fill="rgba(255,255,255,.12)"/>
+            <rect x="120" y="30" width="32" height="170" fill="rgba(255,255,255,.13)"/>
+            <rect x="108" y="18" width="56" height="18" fill="rgba(255,255,255,.1)"/>
+            <rect x="30" y="100" width="122" height="6" fill="rgba(255,255,255,.1)"/>
+            <rect x="30" y="140" width="122" height="6" fill="rgba(255,255,255,.08)"/>
+            <rect x="200" y="80" width="60" height="120" fill="rgba(255,255,255,.1)"/>
+            <rect x="280" y="50" width="40" height="150" fill="rgba(255,255,255,.12)"/>
+            <rect x="340" y="90" width="50" height="110" fill="rgba(255,255,255,.1)"/>
+            <circle cx="44" cy="10" r="5" fill="rgba(200,136,10,.6)"/>
+          </svg>
+        </div>
+        <div class="ind-pattern"></div>
+        <div class="ind-over"></div>
+        <div class="ind-icon">≡ƒÅ¡</div>
+        <div class="ind-content">
+          <div class="ind-name">Petrochemical</div>
+          <div class="ind-sub">Process Industry</div>
+        </div>
+      </div>
+      <!-- Refinery -->
+      <div class="ind-card ind-refinery">
+        <div class="ind-art">
+          <svg style="position:absolute;bottom:0;left:0;right:0;width:100%;height:85%" viewBox="0 0 400 200" preserveAspectRatio="xMidYMax meet">
+            <rect x="40" y="50" width="50" height="150" fill="rgba(255,200,100,.12)"/>
+            <rect x="30" y="35" width="70" height="22" fill="rgba(255,200,100,.1)"/>
+            <rect x="110" y="80" width="35" height="120" fill="rgba(255,200,100,.1)"/>
+            <rect x="165" y="40" width="55" height="160" fill="rgba(255,200,100,.14)"/>
+            <rect x="155" y="25" width="75" height="22" fill="rgba(255,200,100,.1)"/>
+            <rect x="240" y="70" width="80" height="130" fill="rgba(255,200,100,.1)"/>
+            <rect x="340" y="100" width="50" height="100" fill="rgba(255,200,100,.08)"/>
+            <rect x="40" y="120" width="160" height="5" fill="rgba(255,200,100,.15)"/>
+            <!-- flame -->
+            <ellipse cx="65" cy="50" rx="6" ry="10" fill="rgba(255,100,0,.5)"/>
+            <ellipse cx="65" cy="44" rx="3" ry="6" fill="rgba(255,200,0,.6)"/>
+          </svg>
+        </div>
+        <div class="ind-pattern"></div>
+        <div class="ind-over"></div>
+        <div class="ind-icon">Γ¢╜</div>
+        <div class="ind-content">
+          <div class="ind-name">Oil Refinery</div>
+          <div class="ind-sub">Downstream</div>
+        </div>
+      </div>
+      <!-- LNG -->
+      <div class="ind-card ind-lng">
+        <div class="ind-art">
+          <svg style="position:absolute;bottom:0;left:0;right:0;width:100%;height:80%" viewBox="0 0 400 200" preserveAspectRatio="xMidYMax meet">
+            <!-- LNG storage tanks (cylinders in 2D) -->
+            <ellipse cx="80" cy="60" rx="55" ry="18" fill="rgba(100,200,255,.08)" stroke="rgba(100,200,255,.2)" stroke-width="1"/>
+            <rect x="25" y="60" width="110" height="140" fill="rgba(100,200,255,.07)" stroke="rgba(100,200,255,.15)" stroke-width="1"/>
+            <ellipse cx="80" cy="200" rx="55" ry="18" fill="rgba(100,200,255,.05)"/>
+            <ellipse cx="230" cy="70" rx="50" ry="17" fill="rgba(100,200,255,.08)" stroke="rgba(100,200,255,.2)" stroke-width="1"/>
+            <rect x="180" y="70" width="100" height="130" fill="rgba(100,200,255,.07)" stroke="rgba(100,200,255,.15)" stroke-width="1"/>
+            <rect x="140" y="115" width="40" height="5" fill="rgba(100,200,255,.2)"/>
+            <rect x="350" y="80" width="45" height="120" fill="rgba(100,200,255,.06)" stroke="rgba(100,200,255,.12)" stroke-width="1"/>
+          </svg>
+        </div>
+        <div class="ind-pattern"></div>
+        <div class="ind-over"></div>
+        <div class="ind-icon">Γ¥ä∩╕Å</div>
+        <div class="ind-content">
+          <div class="ind-name">LNG Plants</div>
+          <div class="ind-sub">Gas Processing</div>
+        </div>
+      </div>
+      <!-- Power -->
+      <div class="ind-card ind-power">
+        <div class="ind-art">
+          <svg style="position:absolute;bottom:0;left:0;right:0;width:100%;height:85%" viewBox="0 0 400 200" preserveAspectRatio="xMidYMax meet">
+            <!-- cooling towers -->
+            <path d="M30,200 Q45,80 65,100 Q85,120 100,200" fill="rgba(255,255,255,.1)" stroke="rgba(255,255,255,.2)" stroke-width="1"/>
+            <path d="M110,200 Q125,80 145,100 Q165,120 180,200" fill="rgba(255,255,255,.1)" stroke="rgba(255,255,255,.2)" stroke-width="1"/>
+            <path d="M55,88 Q65,78 75,88" fill="none" stroke="rgba(255,255,255,.25)" stroke-width="1"/>
+            <path d="M135,88 Q145,78 155,88" fill="none" stroke="rgba(255,255,255,.25)" stroke-width="1"/>
+            <!-- turbine hall -->
+            <rect x="200" y="60" width="180" height="140" fill="rgba(255,200,0,.08)" stroke="rgba(255,200,0,.15)" stroke-width="1"/>
+            <path d="M200,60 L290,20 L380,60" fill="rgba(255,200,0,.06)" stroke="rgba(255,200,0,.12)" stroke-width="1"/>
+            <!-- chimney -->
+            <rect x="355" y="0" width="20" height="200" fill="rgba(255,255,255,.08)"/>
+            <!-- lightning bolt -->
+            <path d="M290,50 L280,90 L295,90 L285,130 L305,80 L290,80 Z" fill="rgba(255,200,0,.4)"/>
+          </svg>
+        </div>
+        <div class="ind-pattern"></div>
+        <div class="ind-over"></div>
+        <div class="ind-icon">ΓÜí</div>
+        <div class="ind-content">
+          <div class="ind-name">Power Generation</div>
+          <div class="ind-sub">Energy</div>
+        </div>
+      </div>
+      <!-- Pharma -->
+      <div class="ind-card ind-pharma">
+        <div class="ind-art">
+          <svg style="position:absolute;bottom:0;left:0;right:0;width:100%;height:80%" viewBox="0 0 400 200" preserveAspectRatio="xMidYMax meet">
+            <!-- bioreactors / vessels -->
+            <rect x="50" y="60" width="80" height="140" rx="10" fill="rgba(200,150,255,.1)" stroke="rgba(200,150,255,.25)" stroke-width="1"/>
+            <ellipse cx="90" cy="60" rx="40" ry="15" fill="rgba(200,150,255,.08)" stroke="rgba(200,150,255,.2)" stroke-width="1"/>
+            <rect x="85" y="20" width="10" height="42" fill="rgba(200,150,255,.2)"/>
+            <rect x="160" y="90" width="65" height="110" rx="8" fill="rgba(200,150,255,.08)" stroke="rgba(200,150,255,.2)" stroke-width="1"/>
+            <ellipse cx="192" cy="90" rx="32" ry="12" fill="rgba(200,150,255,.06)"/>
+            <rect x="260" y="50" width="100" height="150" rx="4" fill="rgba(200,150,255,.07)" stroke="rgba(200,150,255,.15)" stroke-width="1"/>
+            <!-- cross symbol -->
+            <rect x="300" y="80" width="6" height="30" fill="rgba(200,150,255,.5)"/>
+            <rect x="288" y="90" width="30" height="6" fill="rgba(200,150,255,.5)"/>
+          </svg>
+        </div>
+        <div class="ind-pattern"></div>
+        <div class="ind-over"></div>
+        <div class="ind-icon">≡ƒÆè</div>
+        <div class="ind-content">
+          <div class="ind-name">Pharmaceuticals</div>
+          <div class="ind-sub">Life Sciences</div>
+        </div>
+      </div>
+      <!-- Waste incineration -->
+      <div class="ind-card ind-waste">
+        <div class="ind-art">
+          <svg style="position:absolute;bottom:0;left:0;right:0;width:100%;height:85%" viewBox="0 0 400 200" preserveAspectRatio="xMidYMax meet">
+            <rect x="60" y="80" width="160" height="120" fill="rgba(100,200,100,.08)" stroke="rgba(100,200,100,.2)" stroke-width="1"/>
+            <rect x="100" y="0" width="40" height="82" fill="rgba(100,200,100,.1)" stroke="rgba(100,200,100,.18)" stroke-width="1"/>
+            <rect x="155" y="20" width="30" height="62" fill="rgba(100,200,100,.08)" stroke="rgba(100,200,100,.15)" stroke-width="1"/>
+            <!-- smoke -->
+            <ellipse cx="120" cy="-5" rx="12" ry="8" fill="rgba(255,255,255,.06)"/>
+            <ellipse cx="130" cy="-20" rx="16" ry="10" fill="rgba(255,255,255,.04)"/>
+            <!-- recycling arrows -->
+            <path d="M260,80 Q300,60 340,80 Q320,40 280,40 Q260,40 260,80" fill="none" stroke="rgba(100,200,100,.4)" stroke-width="2"/>
+            <path d="M260,120 Q220,140 240,160 Q280,180 340,160 Q360,140 340,120" fill="none" stroke="rgba(100,200,100,.3)" stroke-width="2"/>
+          </svg>
+        </div>
+        <div class="ind-pattern"></div>
+        <div class="ind-over"></div>
+        <div class="ind-icon">ΓÖ╗∩╕Å</div>
+        <div class="ind-content">
+          <div class="ind-name">Waste Incineration</div>
+          <div class="ind-sub">Environmental</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ΓòÉΓòÉ TEAM ΓòÉΓòÉ -->
+<section id="team" class="section">
+  <div class="wrap">
+    <div class="sec-head r">
+      <div class="eyebrow">Our People</div>
+      <span class="rule"></span>
+      <h2 style="font-size:clamp(2rem,4.5vw,3.4rem);color:var(--white)">Team Strength</h2>
+    </div>
+    <div class="team-layout">
+      <!-- Director Card -->
+      <div class="rl">
+        <div class="dir-card">
+          <div class="dir-avatar">
+            <div class="avatar-bg"></div>
+            <div class="avatar-ring"></div>
+            <div class="avatar-ring2"></div>
+            <div class="avatar-initials">D.J.</div>
+          </div>
+          <div class="dir-accent"></div>
+          <div class="dir-body">
+            <div class="dir-name">Devakumar Jayakumar</div>
+            <div class="dir-role">Director &amp; Principal Engineer</div>
+            <div class="dir-exp-badge">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              20+ Years of Industry Experience
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Team copy -->
+      <div class="team-right rr">
+        <div>
+          <h3>Decades of Field-Proven Knowledge</h3>
+          <p>Our Director, Devakumar Jayakumar, brings extensive hands-on experience in analytical instrumentation and process control engineering. His expertise spans the full analyzer lifecycle ΓÇö from specification and design through commissioning, troubleshooting, and long-term asset management across multiple continents.</p>
+        </div>
+        <div>
+          <h3>Our Engineering Team</h3>
+          <p>Inlec Solutions engineers carry in-depth, practical experience across all major analyzer and instrumentation brands. The team has successfully delivered installation and commissioning projects in petrochemical complexes, refineries, LNG terminals, power plants, waste incineration facilities, food & beverage, cement, and pharmaceutical plants.</p>
+          <p style="margin-top:1rem">Beyond commissioning, the team excels at diagnosing under-performing sample conditioning systems ΓÇö identifying root causes and implementing engineered solutions that improve analyzer availability and reduce total cost of ownership.</p>
+        </div>
+        <div>
+          <div class="eyebrow" style="margin-bottom:.8rem">OEM Brands We Work With</div>
+          <div class="brand-chips">
+            <div class="b-chip">ABB</div>
+            <div class="b-chip">Siemens</div>
+            <div class="b-chip">Yokogawa</div>
+            <div class="b-chip">SICK</div>
+            <div class="b-chip">Emerson</div>
+            <div class="b-chip">E+H</div>
+            <div class="b-chip">Vaisala</div>
+            <div class="b-chip">+ More</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ΓòÉΓòÉ CONTACT ΓòÉΓòÉ -->
+<section id="contact" class="section">
+  <div class="wrap">
+    <div class="sec-head r">
+      <div class="eyebrow">Get In Touch</div>
+      <span class="rule"></span>
+      <h2 style="font-size:clamp(2rem,4.5vw,3.4rem);color:var(--white)">Contact Us</h2>
+      <p style="max-width:500px;color:var(--fog);line-height:1.7;margin-top:.5rem">
+        Ready to discuss your next project or service requirement? Our team is available to help.
+      </p>
+    </div>
+    <div class="contact-layout">
+      <!-- Info -->
+      <div class="c-info rl">
+        <div class="c-block">
+          <div class="c-ico">≡ƒÅó</div>
+          <div>
+            <div class="c-label">Office Address</div>
+            <div class="c-val">
+              Inlec Solutions Australia Pty Ltd<br>
+              28 Carnarvon Avenue<br>
+              Springfield Lakes QLD 4300<br>
+              Australia
+            </div>
+          </div>
+        </div>
+        <div class="c-block">
+          <div class="c-ico">≡ƒô₧</div>
+          <div>
+            <div class="c-label">Phone</div>
+            <div class="c-val">
+              <a href="tel:+61490937912">+61 490 937 912</a>
+            </div>
+          </div>
+        </div>
+        <div class="c-block">
+          <div class="c-ico">Γ£ë∩╕Å</div>
+          <div>
+            <div class="c-label">Email</div>
+            <div class="c-val">
+              <a href="mailto:info@inlecsolutions.com.au">info@inlecsolutions.com.au</a>
+            </div>
+          </div>
+        </div>
+        <div class="c-block">
+          <div class="c-ico">≡ƒòÉ</div>
+          <div>
+            <div class="c-label">Business Hours</div>
+            <div class="c-val">Monday ΓÇô Friday: 8:00 AM ΓÇô 5:30 PM AEST<br>Saturday: By Appointment</div>
+          </div>
+        </div>
+        <!-- ABN strip -->
+        <div class="abn-strip">
+          <div>
+            <div class="abn-label">Australian Business Number</div>
+            <div class="abn-val">690&thinsp;817&thinsp;880</div>
+          </div>
+        </div>
+        <!-- Map placeholder -->
+        <div class="map-placeholder">
+          <div class="map-grid"></div>
+          <div class="map-pin">
+            <div class="map-pin-icon">≡ƒôì</div>
+            <div style="font-family:'Barlow Condensed',sans-serif;font-size:.88rem;font-weight:600;color:var(--white);margin-top:.3rem">Springfield Lakes, QLD 4300</div>
+            <a href="https://maps.google.com/?q=28+Carnarvon+Avenue+Springfield+Lakes+QLD+4300" target="_blank" rel="noopener">Open in Google Maps ΓåÆ</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="c-form-wrap rr">
+        <div class="c-form-title">Request for Services</div>
+        <div id="contact-form">
+          <div class="form-row">
+            <div class="field">
+              <label for="f-name">Full Name *</label>
+              <input type="text" id="f-name" placeholder="Your name" required>
+            </div>
+            <div class="field">
+              <label for="f-company">Company</label>
+              <input type="text" id="f-company" placeholder="Your organisation">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="f-email">Email *</label>
+              <input type="email" id="f-email" placeholder="you@company.com" required>
+            </div>
+            <div class="field">
+              <label for="f-phone">Phone</label>
+              <input type="tel" id="f-phone" placeholder="+61 4__ ___ ___">
+            </div>
+          </div>
+          <div class="form-row one">
+            <div class="field">
+              <label for="f-service">Type of Service</label>
+              <select id="f-service">
+                <option value="">Select a serviceΓÇª</option>
+                <option>Design, Consultancy &amp; Engineering</option>
+                <option>Commissioning</option>
+                <option>Factory Acceptance Testing (FAT)</option>
+                <option>Site Acceptance Testing (SAT)</option>
+                <option>Calibration Services</option>
+                <option>SCS Troubleshooting &amp; Modification</option>
+                <option>Repair &amp; Rectification</option>
+                <option>General Enquiry</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row one">
+            <div class="field">
+              <label for="f-msg">Message *</label>
+              <textarea id="f-msg" placeholder="Briefly describe your requirement, plant type, and locationΓÇª" required></textarea>
+            </div>
+          </div>
+          <!-- honeypot -->
+          <input type="text" id="hp" style="display:none" tabindex="-1" autocomplete="off">
+          <button class="f-submit" onclick="sendForm(event)">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Send Message
+          </button>
+        </div>
+        <div class="f-ok" id="f-ok">
+          Γ£à &nbsp;Thank you! Your enquiry has been received.<br>We'll be in touch within one business day.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ΓòÉΓòÉ FOOTER ΓòÉΓòÉ -->
+<footer>
+  <div class="footer-wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo-wrap">
+          <svg class="logo-icon" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="40" height="40" rx="2" fill="none" stroke="rgba(200,136,10,.35)" stroke-width="1"/>
+            <line x1="21" y1="4" x2="21" y2="38" stroke="#c8880a" stroke-width="2"/>
+            <line x1="9" y1="13" x2="33" y2="13" stroke="#c8880a" stroke-width="1.5"/>
+            <line x1="9" y1="29" x2="33" y2="29" stroke="#c8880a" stroke-width="1.5"/>
+            <circle cx="21" cy="21" r="4.5" fill="none" stroke="#e8a820" stroke-width="1.5"/>
+            <circle cx="21" cy="21" r="2" fill="#c8880a"/>
+            <circle cx="9" cy="13" r="2.5" fill="none" stroke="#c8880a" stroke-width="1"/>
+            <circle cx="33" cy="13" r="2.5" fill="none" stroke="#c8880a" stroke-width="1"/>
+            <circle cx="9" cy="29" r="2.5" fill="none" stroke="#c8880a" stroke-width="1"/>
+            <circle cx="33" cy="29" r="2.5" fill="none" stroke="#c8880a" stroke-width="1"/>
+          </svg>
+          <div class="logo-text-block">
+            <span class="logo-main">Inlec Solutions</span>
+            <span class="logo-sub">Australia Pty Ltd</span>
+          </div>
+        </div>
+        <p>An Analytical Devices Engineering Services company based in Queensland, Australia. Delivering precision analyzer and automation engineering to critical industries across the region.</p>
+        <p style="margin-top:.8rem;font-family:'Barlow Condensed',sans-serif;font-size:.76rem;letter-spacing:.12em;color:rgba(138,172,191,.4)">ABN 690 817 880</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="#about">About Inlec</a></li>
+          <li><a href="#services">Our Services</a></li>
+          <li><a href="#expertise">Analyzer Expertise</a></li>
+          <li><a href="#industries">Industries</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#services">Design &amp; Consultancy</a></li>
+          <li><a href="#services">Commissioning</a></li>
+          <li><a href="#services">FAT / SAT</a></li>
+          <li><a href="#services">Calibration</a></li>
+          <li><a href="#services">SCS Troubleshooting</a></li>
+          <li><a href="#services">Repair &amp; Rectification</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+61490937912">+61 490 937 912</a></li>
+          <li><a href="mailto:info@inlecsolutions.com.au">info@inlecsolutions.com.au</a></li>
+          <li style="color:var(--fog);font-size:.87rem;line-height:1.5">28 Carnarvon Avenue<br>Springfield Lakes QLD 4300</li>
+        </ul>
+        <h5 style="margin-top:1.5rem">Connect</h5>
+        <ul>
+          <li><a href="#" target="_blank">LinkedIn</a></li>
+          <li><a href="#" target="_blank">Google Business</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>┬⌐ 2025 Inlec Solutions Australia Pty Ltd. All rights reserved.</span>
+      <span class="footer-abn">ABN 690 817 880 ┬╖ Springfield Lakes QLD 4300 ┬╖ Australia</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ΓòÉΓòÉ FLOATING CTA ΓòÉΓòÉ -->
+<a href="#contact" class="float-btn" id="floatBtn">
+  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.02 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+  Request Service
+</a>
+
+<script>
+/* ΓöÇΓöÇ NAV ΓöÇΓöÇ */
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>{
+  nav.classList.toggle('solid',window.scrollY>50);
+  document.getElementById('floatBtn').style.opacity=window.scrollY>300?'1':'0';
+});
+
+/* ΓöÇΓöÇ MOBILE MENU ΓöÇΓöÇ */
+function toggleMenu(){
+  const b=document.getElementById('burger');
+  const m=document.getElementById('mob-menu');
+  b.classList.toggle('open');
+  m.classList.toggle('open');
+}
+function closeMenu(){
+  document.getElementById('burger').classList.remove('open');
+  document.getElementById('mob-menu').classList.remove('open');
+}
+
+/* ΓöÇΓöÇ EXPERTISE TABS ΓöÇΓöÇ */
+function showExp(idx,el){
+  document.querySelectorAll('.exp-tab').forEach(t=>t.classList.remove('on'));
+  el.classList.add('on');
+  document.querySelectorAll('.exp-pane').forEach((p,i)=>p.classList.toggle('on',i===idx));
+}
+
+/* ΓöÇΓöÇ SCROLL REVEAL ΓöÇΓöÇ */
+const io=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('v');io.unobserve(e.target);}});
+},{threshold:.1});
+document.querySelectorAll('.r,.rl,.rr').forEach(el=>io.observe(el));
+
+/* ΓöÇΓöÇ STAT COUNTERS ΓöÇΓöÇ */
+function runCounters(){
+  document.querySelectorAll('.stat-n[data-target]').forEach(el=>{
+    const target=+el.dataset.target;
+    let n=0;
+    const step=Math.ceil(target/30);
+    const int=setInterval(()=>{
+      n=Math.min(n+step,target);
+      el.innerHTML=n+'<em>+</em>';
+      if(n>=target)clearInterval(int);
+    },40);
+  });
+}
+const statObs=new IntersectionObserver(entries=>{
+  if(entries[0].isIntersecting){runCounters();statObs.disconnect();}
+},{threshold:.5});
+const statsEl=document.querySelector('.hero-stats');
+if(statsEl)statObs.observe(statsEl);
+
+/* ΓöÇΓöÇ CONTACT FORM ΓöÇΓöÇ */
+function sendForm(e){
+  e.preventDefault();
+  const name=document.getElementById('f-name').value.trim();
+  const email=document.getElementById('f-email').value.trim();
+  const msg=document.getElementById('f-msg').value.trim();
+  if(document.getElementById('hp').value)return;
+  if(!name||!email||!msg){
+    alert('Please fill in the required fields (Name, Email, Message).');return;
+  }
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+    alert('Please enter a valid email address.');return;
+  }
+  const form=document.getElementById('contact-form');
+  const ok=document.getElementById('f-ok');
+  form.style.display='none';
+  ok.style.display='block';
+  setTimeout(()=>{
+    ok.style.display='none';
+    form.style.display='block';
+    ['f-name','f-company','f-email','f-phone','f-service','f-msg'].forEach(id=>{
+      const el=document.getElementById(id);
+      if(el)el.value='';
+    });
+  },6000);
+}
+</script>
 </body>
 </html>
